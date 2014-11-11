@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include top %>
+    <title>框架库文档</title>
+    <link rel=stylesheet href="plugin/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="plugin/codemirror/theme/monokai.css">
+    <style>
+        .CodeMirror{line-height: 1.5;font-size: 15px;font-family:"Microsoft YaHei";height: auto;margin-bottom: 40px;}
+        .CodeMirror pre{padding-left: 10px;}
+        #code{width: 100%;resize: none;border-width: 0;}
+        .topBar{border: 2px solid #1fd500;}
+        .bottomBar{position: fixed;bottom: 0;left: 0;width: 100%;background-color: rgba(105, 108, 91, 0.8);
+            border-top: 1px solid #808080;padding: 5px;z-index: 1000;text-align: center;}
+        .bar-title{
+            background-color: #1c1414;
+            border: 1px solid #d2b218;
+            border-radius: 3px;
+            color: #03ff00;
+            float: left;
+            font-size: 14px;
+            margin-left: 30px;
+            margin-top: 2px;
+            padding: 2px 10px;
+        }
+        .body-wrapper{background-color: #272822;padding: 0;overflow: hidden;}
+    </style>
+</head>
+<body class="body-layer">
+    <% include head %>
+    <input id="input_nav" type="hidden" value="lib"/>
+    <input id="input_url" type="hidden" value="<%=url%>"/>
+    <bodyer>
+        <div class="body-wrapper">
+            <div class="topBar"></div>
+            <textarea id="code"><%=content%></textarea>
+            <div class="bottomBar">
+                <div class="bar-title">标题：框架库文档</div>
+                <button id="btn-save" class="btn btn-success btn-sm">保存</button>
+                <button class="btn btn-primary btn-sm">预览</button>
+                <button class="btn btn-default btn-sm">取消</button>
+            </div>
+        </div>
+    </bodyer>
+</body>
+</html>
+
+<script>
+    lib.use(['modules/edit']);
+    /*var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        mode: "text/javascript",
+        matchBrackets: false,
+        //keyMap: "sublime",
+        theme: "monokai",
+        styleActiveLine: true, //line选择是是否加亮
+        lineWrapping: true //是否自动换行
+    });*/
+</script>

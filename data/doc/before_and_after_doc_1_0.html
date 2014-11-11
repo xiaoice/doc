@@ -1,0 +1,181 @@
+<bodyer class="before-after-doc-layer">
+    <div class="body-wrapper">
+        <div class="panel-title">前后端数据交互规范文档<kbd>版本号：1.01</kbd></div>
+        <div class="panel-content">
+            <p>目的：分离前后端耦合开发，降低业务理解复杂度，减轻后端开发任务，让后端开发同事重点关注数据</p>
+            <p>效率：前后端异步开发，前端可以先行开发HTML静态页面，根据规范文档使用模拟数据，不用等待后端接口开发完毕</p>
+            <p>可维护性：文档用于记录，方便以后发现BUG的时候排查问题</p>
+        </div>
+
+        <div class="panel-bg-light">文档demo内容<a class="pull-right" href="">DEMO文档下载</a></div>
+        <h1 class="page-header">一、VO对象</h1>
+        <div class="panel panel-default panel-large">
+            <div class="panel-heading fs32">1.1、page对象</div>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>参数注释</th>
+                    <th>参数类型</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>pageSize</td>
+                    <td>每页显示数据条数</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td>pageIndex</td>
+                    <td>当前第几页</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td>pageTotal</td>
+                    <td>总共多少页</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td>rowCount</td>
+                    <td>总共多少条数据</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>数据列表</td>
+                    <td>Array</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="panel panel-default panel-large">
+            <div class="panel-heading fs32">1.2、用户VO对象</div>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>参数注释</th>
+                    <th>参数类型</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>username</td>
+                    <td>用户名称</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>密码</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>年龄</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td>sex</td>
+                    <td>性别 1：男；2：女</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td>状态 1：正常；2：异常 默认：1</td>
+                    <td>Int</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h1 class="page-header">二、接口列表</h1>
+        <div class="panel panel-default panel-large">
+            <div class="panel-heading fs32">2.1、用户登录</div>
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <td colspan="3">用户登录</td>
+                </tr>
+                <tr>
+                    <td>接口类型</td>
+                    <td>post</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>接口url</td>
+                    <td colspan="2">192.168.0.11/rest/login</td>
+                </tr>
+                <tr>
+                    <td>接口名称</td>
+                    <td colspan="2">login</td>
+                </tr>
+                <tr>
+                    <td class="td-light" colspan="3">接口参数[JSON]</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>参数注释</th>
+                    <th>参数类型</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>username</td>
+                    <td>用户名</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>密码</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>年龄</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td>sex</td>
+                    <td>性别 1：男；2：女</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td class="td-light" colspan="3">返回值[JSON]</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>结果名</th>
+                    <th>结果说明</th>
+                    <th>参数类型</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>status</td>
+                    <td>0:失败；1：成功</td>
+                    <td>Int</td>
+                </tr>
+                <tr>
+                    <td>msg</td>
+                    <td>提示信息（操作成功）</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>返回数据，JSONObject或者JSONArray</td>
+                    <td>userVo</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</bodyer>

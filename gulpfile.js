@@ -1,68 +1,150 @@
+var crypto = require('crypto');
 var gulp    = require('gulp');
-var gutil    = require('gulp-util');
 var uglify  = require('gulp-uglify');
 var concat  = require('gulp-concat');
 var clean = require('gulp-clean');
 var sequence = require('gulp-sequence');
+var rename = require('gulp-rename');
+var replace = require('gulp-replace');
 var minifyCss = require('gulp-minify-css'),
 minifyHtml = require('gulp-minify-html'),
 rev = require('gulp-rev'),
-replace = require('gulp-replace'),
 usemin = require('gulp-usemin');
 
-//合并文件
-gulp.task('test', function () {
-    gulp.src('./bower_components/jquery/src/*.js')
-        //.pipe(uglify())
-        .pipe(concat('all.min.js'))
-        .pipe(gulp.dest('./build'));
-});
+
+var md5=(function md5(str) {
+    return crypto.createHash('md5').update(new Date().getTime().toString()).digest('hex').slice(0, 8);
+})();
 
 
-gulp.task('js-lib', function () {
-    return gulp.src([
-        'static/bower_components/jquery/dist/jquery.min.js'
-        ,'static/bower_components/bootstrap/dist/js/bootstrap.min.js'
-        //,'static/bower_components/angular/angular.min.js'
-    ])
-    .pipe(concat('lib.js'))
-    .pipe(gulp.dest('static/dist/js'));
-});
 
-gulp.task('js', function () {
-    return gulp.src([
-        ,'static/bower_components/angular/angular.min.js'
+gulp.task('dev-js', function () {
+    gulp.src([
+        '!static/src/js/sea.js',
+        '!static/src/js/sea.config.js',
+        'static/src/js/**/*.js'
     ])
     .pipe(gulp.dest('static/dist/js'));
 });
 
-
-gulp.task('css-lib', function () {
-    return gulp.src([
-        'static/bower_components/bootstrap/dist/css/bootstrap.min.css'
+gulp.task('dev-js-lib', function () {
+    gulp.src([
+        'static/bower_components/jquery/dist/jquery.js'
+        ,'static/bower_components/bootstrap/dist/js/bootstrap.js'
     ])
-    .pipe(concat('lib.css'))
+    .pipe(gulp.dest('static/dist/js'));
+
+    gulp.src([
+        'static/src/js/sea.js',
+        'static/src/js/sea.config.js'
+    ])
+    .pipe(concat("lib.js"))
+    .pipe(gulp.dest('static/dist/js'));
+});
+
+
+gulp.task('dev-css', function () {
+    return gulp.src([
+        'static/src/css/app.css'
+    ])
+    .pipe(gulp.dest('static/dist/css/'));
+});
+
+gulp.task('dev-css-lib', function () {
+    return gulp.src([
+        'static/bower_components/bootstrap/dist/css/bootstrap.css'
+    ])
+    .pipe(concat("lib.css"))
     .pipe(gulp.dest('static/dist/css'));
 });
 
+gulp.task('dev-html', function () {
+    gulp.src([
+        '!static/src/plugin/**/*.html',
+        'static/src/**/*.html'
+    ])
+    .pipe(rename({extname:".ejs"}))
+    .pipe(gulp.dest('static/dist/'));
+
+    gulp.src([
+        'static/src/plugin/**/*',
+    ])
+    .pipe(gulp.dest('static/dist/plugin'));
+});
 
 gulp.task('font', function () {
     return gulp.src('static/bower_components/bootstrap/dist/fonts/*').pipe(gulp.dest('static/dist/fonts'));
 });
 
+
+
+
+gulp.task('js-lib', function () {
+    return gulp.src([
+        'static/bower_components/jquery/dist/jquery.js'
+        ,'static/bower_components/bootstrap/dist/js/bootstrap.js'
+    ])
+    .pipe(uglify())
+    .pipe(concat("lib.js"))
+    .pipe(rename({
+        //extname:"",
+        //prefix: "",
+        suffix: "_"+md5
+    }))
+    .pipe(gulp.dest('static/dist/js'));
+});
+
+gulp.task('css-lib', function () {
+    return gulp.src([
+        'static/bower_components/bootstrap/dist/css/bootstrap.css'
+    ])
+    .pipe(minifyCss())
+    .pipe(concat("lib.css"))
+    .pipe(rename({
+        suffix: "_"+md5
+    }))
+    .pipe(gulp.dest('static/dist/css'));
+});
+
+gulp.task('js', function () {
+    return gulp.src([
+        'static/src/js/app.js'
+    ])
+        .pipe(uglify())
+        .pipe(rename({
+            suffix: "_"+md5
+        }))
+        .pipe(gulp.dest('static/dist/js'));
+});
+
+gulp.task('css', function () {
+    return gulp.src([
+        'static/src/css/app.css'
+    ])
+    .pipe(minifyCss())
+    .pipe(rename({
+        suffix: "_"+md5
+    }))
+    .pipe(gulp.dest('static/dist/css/'));
+});
+
+gulp.task('html', function () {
+    return gulp.src(['static/src/*.html'])
+        .pipe(replace(/((link|script)(.*))\.(js|css|png|gif)/ig, '$1_'+md5+'.$4'))
+        .pipe(minifyHtml({empty: true}))
+        .pipe(rename({ extname:".ejs"}))
+        .pipe(gulp.dest('static/dist/'));
+});
+
 //清理文件夹
-gulp.task('clean', function(cb) {
-  	gulp.src(['static/dist/*'],{read:false}).pipe(clean({force:true}));
-});
-
-// 定义develop任务在日常开发中使用
-gulp.task('develop',function(){
-  gulp.run('buildlib');
-  //gulp.watch('./javis/static/less/*.less', ['build-less']);
+gulp.task('clean', function() {
+  	return gulp.src(['static/dist'],{read:false}).pipe(clean({force:true}));
 });
 
 
-gulp.task('dev', function () {
+
+
+gulp.task('jsp', function () {
     return gulp.src(['static/view/*/*.jsp','static/view/*.jsp'])
         //.pipe(replace(/(\.js|\.css|\.png|\.gif)/g, '$1'+"?v="+new Date().getTime()))
         .pipe(replace(/(\/static\/(.*)\.(js|css|png|gif))/ig, '$1?v=' + new Date().getTime()))
@@ -74,5 +156,33 @@ gulp.task('dev', function () {
         .pipe(gulp.dest('static/publish/'));
 });
 
-gulp.task('default',sequence(['js-lib','js','css-lib','font']));
+gulp.task('usemin', function() {
+    gulp.src(['static/src/*.html'])
+        .pipe(usemin({
+            css: [minifyCss(), 'concat'],
+            html: [minifyHtml({empty: true})],
+            js: [uglify(), rev()]
+        }))
+        .pipe(gulp.dest('static/dist/'));
+});
+
+// 监听
+gulp.task('watch', function() {
+    gulp.watch(['static/src/js/*.js','static/src/js/modules/*.js'], ['dev-js']);
+    gulp.watch('static/src/css/app.css', ['dev-css']);
+    gulp.watch('static/src/*.html', ['dev-html']);
+});
+
+
+gulp.task('public',['clean'],function(){
+    gulp.run(['js-lib','css-lib','font','js','css','html']);
+});
+
+gulp.task('default',['clean'],function(){
+    gulp.run(['dev-js-lib','dev-css-lib','font','dev-js','dev-css','dev-html','watch']);
+});
+
+
+
+//gulp.task('default',sequence(['js-lib','css-lib','font','js','css','html']));
 
