@@ -19,7 +19,7 @@ router.get('/loginOut.do', function (req, res) {
 router.post('/writeFile.do', function (req, res) {
     var data=req.body.data;
     var url=req.body.url;
-    fs.writeFile(url,data,"utf-8",function(err,data){
+    fs.writeFile("data"+url,data,"utf-8",function(err,data){
         if(err){
             res.send("写入失败");
         }else{
@@ -29,24 +29,26 @@ router.post('/writeFile.do', function (req, res) {
 });
 
 
-//read
+//编辑页面源代码
 router.get('/edit.html', function (req, res) {
-    fs.readFile("data/doc/before_and_after_doc_1_0.html","utf-8",function(err,data){
+    var url=req.query.url,
+        title=req.query.title;
+    fs.readFile("data/"+url,"utf-8",function(err,data){
         if(err){
             res.send("读取失败");
         }else{
-            return res.render("edit",{url:"data/doc/before_and_after_doc_1_0.html",content:data});
+            return res.render("edit",{url:url,title:title,reader:data});
         }
     });
 });
 
-//read 解析文档
-router.get(/doc\/(.*).html/, function (req, res) {
-    fs.readFile("data/doc/"+req.params[0]+".html","utf-8",function(err,data){
+
+//规范文档
+router.get(/(doc|plugin|lib|tool)\/(.*).html/, function (req, res) {
+    fs.readFile("data/"+req.params[0]+"/"+req.params[1]+".html","utf-8",function(err,data){
         if(err){
-            res.send("读取失败");
+            res.send("404");
         }else{
-            //res.type('html');
             res.render("render",{title:"规范文档",render:data});
         }
     });
