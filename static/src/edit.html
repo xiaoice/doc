@@ -5,35 +5,15 @@
     <title><%=title%></title>
     <link rel=stylesheet href="plugin/codemirror/lib/codemirror.css">
     <link rel="stylesheet" href="plugin/codemirror/theme/monokai.css">
-    <style>
-        .CodeMirror{line-height: 1.5;font-size: 15px;font-family:"Microsoft YaHei";height: auto;margin-bottom: 40px;}
-        .CodeMirror pre{padding-left: 10px;}
-        #code{width: 100%;resize: none;border-width: 0;}
-        .topBar{border: 2px solid #1fd500;}
-        .bottomBar{position: fixed;bottom: 0;left: 0;width: 100%;background-color: rgba(105, 108, 91, 0.8);
-            border-top: 1px solid #808080;padding: 5px;z-index: 1000;text-align: center;}
-        .bar-title{
-            background-color: #1c1414;
-            border: 1px solid #d2b218;
-            border-radius: 3px;
-            color: #03ff00;
-            float: left;
-            font-size: 14px;
-            margin-left: 30px;
-            margin-top: 2px;
-            padding: 2px 10px;
-        }
-        body{background-color: #272822;padding: 0;overflow: hidden;}
-    </style>
 </head>
-<body class="body-layer">
+<body class="body-layer edit-layer">
     <% include head %>
     <input id="input_nav" type="hidden" value="lib"/>
     <input id="input_url" type="hidden" value="<%=url%>"/>
     <bodyer>
         <div class="body-wrapper pd0">
             <div class="topBar"></div>
-            <textarea id="code"><%=reader%></textarea>
+            <textarea class="code" id="code"><%=reader%></textarea>
             <div class="bottomBar">
                 <div class="bar-title">标题：<%=title%></div>
                 <button id="btn-save" class="btn btn-success btn-sm">保存</button>

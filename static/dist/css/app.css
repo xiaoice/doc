@@ -52,6 +52,21 @@ a:hover{text-decoration: none;}
 .before-after-doc-layer tr td:last-child{width: 20%;}
 /*前后端交互文档-结束*/
 
+/*编辑文件-开始*/
+.edit-layer{background-color: #272822;padding: 0;overflow: hidden;}
+.edit-layer .CodeMirror{line-height: 1.5;font-size: 15px;font-family:"Microsoft YaHei";height: auto;margin-bottom: 40px;}
+.edit-layer .CodeMirror pre{padding-left: 10px;}
+.edit-layer .code{width: 100%;resize: none;border-width: 0;}
+.edit-layer .topBar{border: 2px solid #1fd500;}
+.bottomBar{position: fixed;bottom: 0;left: 0;width: 100%;background-color: rgba(105, 108, 91, 0.8);
+    border-top: 1px solid #808080;padding: 5px;z-index: 1000;text-align: center;}
+.bar-title{
+    background-color: #1c1414;border: 1px solid #d2b218; border-radius: 3px;color: #03ff00;
+    float: left;font-size: 14px;margin-left: 30px;margin-top: 2px;padding: 2px 10px;
+}
+.bottomBar-black{background-color: rgba(0, 0, 0, 0.5);border-top: 1px solid rgba(0, 0, 0, 0.8);}
+/*编辑文件-结束*/
+
 /*运行JS-开始*/
 .runjs-layer{}
 .runjs-layer .result{min-height: 300px;max-height: 340px;}
@@ -75,6 +90,6 @@ a:hover{text-decoration: none;}
 .runjs-layer .icon-expand,.runjs-layer .icon-collaps{border: 1px solid #8f8d8d; background-color: #fff; border-radius: 2px;width: 12px;height: 12px;position: relative;display: inline-block;vertical-align: middle;margin-right: 9px;}
 .runjs-layer .icon-collaps:after{content: "-";font-size: 12px;position: absolute;left: 3px;top: -4.5px;color: #333;}
 .runjs-layer .icon-expand:after{content: "+";font-size: 12px;position: absolute;left: 1px;top: -4.5px;color: #333;}
-
 /*运行JS-结束*/
+
 

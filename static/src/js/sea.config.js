@@ -8,6 +8,7 @@
             'jquery': 'jquery.js',
             'global': 'modules/global.js',
             'util': 'modules/util.js',
+            'module': 'modules/module.js',
             'render': 'modules/render.js',
             'codemirror': '/plugin/codemirror/lib/codemirror.js',
             'codemirrorHtml': '/plugin/codemirror/mode/htmlmixed/htmlmixed.js',
