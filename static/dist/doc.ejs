@@ -1,29 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <% include top %>
-  <title>规范文档</title>
+    <% include top %>
+    <title>规范文档</title>
 </head>
-<body class="body-layer doc-layer">
-    <% include head %>
+<body class="body-layer">
+<% include head %>
+<bodyer>
     <input id="input_nav" type="hidden" value="doc"/>
-    <bodyer>
-        <div class="body-wrapper">
-            <div class="panel panel-default fs24">
-                <div class="panel-heading fs32">规范文档</div>
-                <div class="panel-body">
-                    <p>本规范仅对现阶段具备参考作用。</p>
-                    <p>不管有多少人共同参与同一项目，一定要确保每一行代码都像是同一个人编写的。</p>
-                    <p>永远遵循同一套编码规范 -- 可以是这里列出的，也可以是你自己总结的。如果你发现本规范中有任何错误，敬请指正。</p>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="label label-warning">外链</span><a target="_blank" href="http://codeguide.bootcss.com/">前端编码参考规范</a></li>
-                    <li class="list-group-item"><span class="label label-danger">前后端</span><a href="before_and_after_doc_1_0.html">前后端数据交互规范文档</a><kbd>1.0</kbd></li>
-                    <li class="list-group-item"><a>JS书写参考规范</a></li>
-                    <li class="list-group-item"><a>HTML5移动网站参考规范</a></li>
-                </ul>
+    <div class="body-wrapper">
+        <div class="panel panel-default fs24">
+            <div class="panel-heading fs32">
+                规范文档
             </div>
+            <div class="panel-body">
+                <p>本规范仅对现阶段具备参考作用。</p>
+                <p>不管有多少人共同参与同一项目，一定要确保每一行代码都像是同一个人编写的。</p>
+                <p>永远遵循同一套编码规范 -- 可以是这里列出的，也可以是你自己总结的。如果你发现本规范中有任何错误，敬请指正。</p>
+            </div>
+            <ul class="list-group"><%- render%></ul>
         </div>
-    </bodyer>
+    </div>
+    <div class="bottomBar bottomBar-black">
+        <button id="btn_add" class="btn btn-success btn-sm">新增</button>
+        <a href="edit.html?id=doc" class="btn btn-primary btn-sm">修改本页</a>
+    </div>
+</bodyer>
 </body>
 </html>
+<script>
+    lib.use(['modules/module']);
+</script>

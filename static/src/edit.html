@@ -8,7 +8,7 @@
 </head>
 <body class="body-layer edit-layer">
     <% include head %>
-    <input id="input_nav" type="hidden" value="lib"/>
+    <input id="input_nav" type="hidden" value="<%=module%>"/>
     <input id="input_url" type="hidden" value="<%=url%>"/>
     <bodyer>
         <div class="body-wrapper pd0">
@@ -16,9 +16,9 @@
             <textarea class="code" id="code"><%=reader%></textarea>
             <div class="bottomBar">
                 <div class="bar-title">标题：<%=title%></div>
-                <button id="btn-save" class="btn btn-success btn-sm">保存</button>
-                <button class="btn btn-primary btn-sm">预览</button>
-                <button class="btn btn-default btn-sm">取消</button>
+                <button id="btn_save" class="btn btn-success btn-sm">保存</button>
+                <a target="_blank" id="btn_save_preview" href="<%=url%>" class="btn btn-primary btn-sm">保存并预览</a>
+                <a href="/<%=module%>.html" class="btn btn-default btn-sm">返回</a>
             </div>
         </div>
     </bodyer>

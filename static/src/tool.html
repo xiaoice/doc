@@ -5,22 +5,26 @@
     <title>工具</title>
 </head>
 <body class="body-layer">
-    <% include head %>
+<% include head %>
+<bodyer>
     <input id="input_nav" type="hidden" value="tool"/>
-    <bodyer>
-        <div class="body-wrapper">
-            <div class="panel panel-default fs24">
-                <div class="panel-heading fs32">工具</div>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="formatJson.html">JSON格式化</a></li>
-                    <li class="list-group-item"><a href="runjs.html">运行JS</a></li>
-                </ul>
+    <div class="body-wrapper">
+        <div class="panel panel-default fs24">
+            <div class="panel-heading fs32">
+                工具
             </div>
+            <div class="panel-body">
+            </div>
+            <ul class="list-group"><%- render%></ul>
         </div>
-    </bodyer>
+    </div>
+    <div class="bottomBar bottomBar-black">
+        <button id="btn_add" class="btn btn-success btn-sm">新增</button>
+        <a href="edit.html?id=tool" class="btn btn-primary btn-sm">修改本页</a>
+    </div>
+</bodyer>
 </body>
 </html>
-
 <script>
-
+    lib.use(['modules/module']);
 </script>

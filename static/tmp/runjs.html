@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include top %>
+    <title>运行JS</title>
+</head>
+<body class="body-layer runjs-layer">
+    <% include head %>
+    <bodyer>
+        <div class="body-wrapper">
+            <div class="panel panel-default">
+                <div class="panel-heading fs24">执行JS</div>
+                <div class="panel-body">
+                    <textarea id="code" class="textarea"></textarea>
+                </div>
+                <div class="panel-btn">
+                    <button id="btn_clear1" type="button" class="btn btn-default">清空代码</button>
+                    <button id="btn_clear2" type="button" class="btn btn-default">清空控制台</button>
+                    <button id="btn_run" type="button" class="btn btn-primary">运行</button>
+                </div>
+                <div class="panel-result">
+                    <pre id="result" class="result"></pre>
+                </div>
+            </div>
+        </div>
+    </bodyer>
+</body>
+</html>
+
+<script>
+
+    lib.use('jquery',function($) {
+        function format(json) {
+            var i, j, k, result = "";
+            if (typeof json.length != "undefined") {
+                //index+=1;
+                for (i = 0, j = json.length; i < j; i++) {
+                    result += format(json[i]);
+                }
+            } else {
+                for (i in json) {
+                    k = json[i];
+                    if (json[i] === null) {
+                        result += '<div class="level"><span class="lab">"' + i + '"</span>:<a class="null">' + k + '</a></div>';
+                    } else if (typeof k !== "object") {
+                        k = typeof k === 'string' ? '"' + k + '"' : k;
+                        result += '<div class="level">';
+                        result += '<span class="lab">"' + i + '"</span>:' + '<span class="' + typeof k + '">' + k + "</span>" + '</div>';
+                    } else if (typeof k === "object") {
+                        result += '<div class="level"><div><a href="javascript:;" class="icon-collaps"></a><span class="objLab">"' + i + '"</span>:<span class="brace">{</span></div>';
+                        result += format(k) + '<div><span class="brace">}</span></div></div>';
+                    }
+                }
+            }
+            return result;
+        }
+
+        console.log = function () {
+            $("#result").append("<div>" + Array.prototype.join.call(arguments, ",") + "</div>");
+        };
+
+        console.time = function () {
+            $("#result").append("<div>" + new Date().getTime() + "</div>");
+        };
+
+        console.dir = function (obj) {
+            result = '<div><a href="javascript:;" class="icon-collaps"></a><span class="brace">{</span></div>' + format(obj) + '<div><span class="brace">}</span></div>';
+            $("#result").append(result);
+        };
+
+        $(document).on("click", "#btn_run", function () {
+            var code = $("#code").val(), result;
+            if (code == "") {
+                return;
+            }
+            try {
+                result = new Function(code)();
+                if (typeof result === "undefined") {
+                    if (code.indexOf("return") === -1) {
+                        result = "";
+                    }
+                } else {
+                    result = '<div>' + result + '</div>';
+                }
+            } catch (e) {
+                result = '<div class="red">' + e + '</div>';
+            }
+
+            $("#result").append(result);
+        }).on("click", "#btn_clear1", function () {
+            $("#code").val("");
+        }).on("click", "#btn_clear2", function () {
+            $("#result").empty();
+        }).on("click", ".icon-collaps", function () {
+            var $this = $(this), $parent = $this.parent();
+            if ($this.hasClass("icon-expand")) {
+                $parent.siblings().show();
+                $this.removeClass("icon-expand");
+                $parent.find(".brace-expand").remove();
+            } else {
+                $parent.append('<span class="brace brace-expand">...}</span>').siblings().hide();
+                $this.addClass("icon-expand");
+            }
+        });
+    });
+</script>

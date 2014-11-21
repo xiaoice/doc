@@ -15,7 +15,7 @@ define('modules/edit', ['jquery','codemirror','codemirrorHtml'],function (requir
         lineWrapping: true //是否自动换行
     });
 
-    $(document).on("click","#btn-save",function(){
+    $(document).on("click","#btn_save,#btn_save_preview",function(){
         $.post("writeFile.do",{url:$("#input_url").val(),data:editor.getValue()},function(result){
             console.log(result);
         });

@@ -3,10 +3,12 @@ define('modules/module', ['jquery'],function(require,exports,module){
     var $=require("jquery"),moduleName=$("#input_nav").val();
 
     $(document).on("mouseenter",".list-group-item",function(){
-        var $this=$(this),url,item=$this.find(".item");
-        url="/edit.html?url="+item.attr("href")+"&title="+item.html();
-        if(!$this.hasClass("toolbar")){
-            $this.append('<span class="toolbar"><a href="'+url+'" class="label label-primary">修改</a><a class="label label-danger">删除</a></span>');
+        var $this=$(this),id,item=$this.find(".item");
+        if(item.attr("href")){
+            id=item.attr("href").replace(/\/(.*)\//,"").replace(".html","");
+            if(!$this.hasClass("toolbar")){
+                $this.append('<span class="toolbar"><a href="/edit.html?id='+id+'" class="label label-primary">修改</a><a class="label label-danger">删除</a></span>');
+            }
         }
     }).on("mouseleave",".list-group-item",function(){
         $(this).find('.toolbar').remove();

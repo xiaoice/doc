@@ -1,4 +1,5 @@
-var crypto = require('crypto');
+var crypto = require('crypto'),
+    fs=require("fs");
 
 //返回结果组件
 function result(status,msg,data){
@@ -32,8 +33,83 @@ var util={
             }
         }
     },
-    formatJson:function(data){
+    parseJson:function(data){
         return JSON.parse(JSON.stringify(data));
+    },
+    //美化json格式
+    formatBeautifyJSON: function (JSON,k) {
+        return (function(JSON){
+            function __formatSpace(length){
+                var val="",length=+length||1;
+                for(var i=0;i<length;i++){
+                    val+="    ";
+                }
+                return val;
+            }
+
+            function __formatJson(json,index){
+                var i, j, k,result="",tmpLeft="",tmpRight="",results=[],index=index|| 1;
+                if(Array.isArray(json)){
+                    for(i=0,j=json.length;i<j;i++){
+                        if(Array.isArray(json[i])){
+                            tmpLeft="[";
+                            tmpRight="]";
+                        }else{
+                            tmpLeft="{";
+                            tmpRight="}";
+                        }
+                        results.push("\r\n"+__formatSpace(index)+tmpLeft+__formatJson(json[i],index+1)+"\r\n"+__formatSpace(index)+tmpRight);
+                    }
+                    result+=results.join(",");
+                }else{
+                    for(i in json){
+                        k=json[i];
+                        if(typeof k!=="object"){
+                            results.push("\r\n"+__formatSpace(index)+'"'+i+'"'+':"'+k+'"');
+                        }else if(typeof k==="object"){
+                            if(Array.isArray(k)){
+                                tmpLeft="[";
+                                tmpRight="]";
+                            }else{
+                                tmpLeft="{";
+                                tmpRight="}";
+                            }
+                            results.push("\r\n"+__formatSpace(index)+'"'+i+'"'+':'+tmpLeft+__formatJson(k,index+1)+"\r\n"+__formatSpace(index)+tmpRight);
+                        }
+                    }
+                    result+=results.join(",");
+                }
+                return result;
+            }
+
+            return (function(){
+                var result="";
+
+                if(typeof JSON=="object"){
+                    if(Array.isArray(JSON)){
+                        result="["+__formatJson(JSON)+"\r\n]";
+                    }else{
+                        result="{"+__formatJson(JSON)+"\r\n}";
+                    }
+                }
+                return result;
+            })()
+        })(JSON);
+    },
+    //对配置文件config.json进行读写操作
+    setConfig:function(doBefore,callback){
+        var doBefore=doBefore,callback=callback
+            ,config=require("../data/config.json");
+        if(arguments.length==1){
+            callback=doBefore;
+        }else{
+            if(doBefore){
+                config=doBefore(config);
+            }
+        }
+        fs.writeFile("./data/config.json",util.formatBeautifyJSON(config),"utf-8",function(err){
+            callback&&callback(err,config);
+        });
     }
 };
 

@@ -1,0 +1,30 @@
+{
+    "doc":{
+        "title":"规范文档",
+        "module":"doc"
+    },
+    "lib":{
+        "title":"框架库文档",
+        "module":"lib"
+    },
+    "plugin":{
+        "title":"插件",
+        "module":"plugin"
+    },
+    "tool":{
+        "title":"工具",
+        "module":"tool"
+    },
+    "before_and_after_doc_1_0":{
+        "title":"前后端数据交互规范文档",
+        "module":"doc"
+    },
+    "runjs":{
+        "title":"运行JS",
+        "module":"tool"
+    },
+    "formatJson":{
+        "title":"JSON格式化",
+        "module":"tool"
+    }
+}

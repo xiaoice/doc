@@ -3,25 +3,42 @@
  */
 var express = require('express'),
     router = express.Router(),
+    util = require('../util/util'),
     fs=require("fs");
 
 //编辑页面源代码
 router.get('/edit.html', function (req, res) {
-    var url=req.query.url,
-        title=req.query.title;
-    fs.readFile("data/"+url,"utf-8",function(err,data){
-        if(err){
-            res.send(404);
-        }else{
-            return res.render("edit",{url:url,title:title,reader:data});
-        }
-    });
+    var id=req.query.id,module,title,url;
+    if(id){
+        util.setConfig(function(err,config){
+            if(!err&&config[id]){
+                module=config[id].module;
+                title=config[id].title;
+                if(id===module){
+                    url="/"+module+".html";
+                }else{
+                    url="/"+module+"/"+id+".html";
+                }
+                fs.readFile("data"+url,"utf-8",function(err,data){
+                    if(err){
+                        return res.send(404);
+                    }else{
+                        return res.render("edit",{url:url,title:title,module:module,reader:data});
+                    }
+                });
+            }else{
+                return res.send(404);
+            }
+        });
+    }else{
+        return res.send(404);
+    }
 });
 
 
 //主页-一级页面
 router.get(/(doc|plugin|lib|tool).html/, function (req, res) {
-    fs.readFile("data/"+req.params[0]+"/index.html","utf-8",function(err,data){
+    fs.readFile("data/"+req.params[0]+".html","utf-8",function(err,data){
         if(err){
             res.send(404);
         }else{
@@ -33,8 +50,8 @@ router.get(/(doc|plugin|lib|tool).html/, function (req, res) {
 
 //模块-二级页面
 router.get(/(doc|plugin|lib|tool)\/(.*).html/, function (req, res) {
-    var module=req.params[0];
-    fs.readFile("data/"+module+"/"+req.params[1]+".html","utf-8",function(err,data){
+    var module=req.params[0],url="data/"+module+"/"+req.params[1]+".html";
+    fs.readFile(url,"utf-8",function(err,data){
         if(err){
             res.send("404");
         }else{
