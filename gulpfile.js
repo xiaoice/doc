@@ -70,6 +70,11 @@ gulp.task('dev-html', function () {
         'static/src/plugin/**/*',
     ])
     .pipe(gulp.dest('static/dist/plugin'));
+
+    gulp.src([
+        'static/src/tpl/**/*','!static/src/tpl/**/*.html'
+    ])
+    .pipe(gulp.dest('static/dist/tpl'));
 });
 
 gulp.task('font', function () {
@@ -168,9 +173,9 @@ gulp.task('usemin', function() {
 
 // 监听
 gulp.task('watch', function() {
-    gulp.watch(['static/src/js/*.js','static/src/js/modules/*.js'], ['dev-js']);
-    gulp.watch('static/src/css/app.css', ['dev-css']);
-    gulp.watch('static/src/*.html', ['dev-html']);
+    //gulp.watch(['static/src/js/*.js','static/src/js/modules/*.js'], ['dev-js']);
+    //gulp.watch('static/src/css/app.css', ['dev-css']);
+    gulp.watch('static/src/**/*', ['dev-js','dev-css','dev-html']);
 });
 
 

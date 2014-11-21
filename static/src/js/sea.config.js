@@ -15,7 +15,9 @@
             'codemirrorXml': '/plugin/codemirror/mode/xml/xml.js',
             'codemirrorJavascript': '/plugin/codemirror/mode/javascript/javascript.js',
             'codemirrorCss': '/plugin/codemirror/mode/css/css.js',
-            'codemirrorSublime': '/plugin/codemirror/keymap/sublime.js'
+            'codemirrorMarkdown': '/plugin/codemirror/mode/markdown/markdown.js',
+            'codemirrorSublime': '/plugin/codemirror/keymap/sublime.js',
+            'codemirrorFullscreen': '/plugin/codemirror/addon/display/fullscreen.js'
         }
     });
 

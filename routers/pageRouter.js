@@ -60,8 +60,13 @@ router.get(/(doc|plugin|lib|tool)\/(.*).html/, function (req, res) {
     });
 });
 
+//数据-jquery文档
+router.get(/jquery\/(.*).html/, function (req, res) {
+    var url="tpl/jquery/"+req.params[0]+".ejs";
+    res.render(url,{module:"doc",title:"jquery"});
+});
+
 router.get(/(.*)/, function (req, res) {
-    //console.log(req.params[0].slice(1).replace(".html",""));
     res.render(req.params[0].slice(1).replace(".html",""));
 });
 

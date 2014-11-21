@@ -8,7 +8,6 @@ var routerAjax = require('./routers/pageRouterAjax');
 var favicon = require('static-favicon');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-
 app.set('port', process.env.PORT || 80);
 app.set('views', path.join(__dirname, 'static/dist'));
 app.engine('.ejs', ejs.__express);

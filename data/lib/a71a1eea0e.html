@@ -1,0 +1,138 @@
+<div class="body-wrapper" style="margin-top:-20px;">
+  <div class="comment-content">
+      <div class="edit-comment-hide">
+        <div class="comment-body markdown-body markdown-format js-comment-body">
+            <h1>API 快速参考</h1>
+  			<p>该页面列举了 Sea.js 的常用 API。只要掌握这些用法，就可以娴熟地进行模块化开发。</p>
+  			<hr>
+            <h3>seajs.config</h3>
+            <p>用来对 Sea.js 进行配置。</p>
+            <div class="highlight highlight-js">
+            <pre>seajs.config({
+
+    <span class="pl-c">// 设置路径，方便跨目录调用</span>
+    paths<span class="pl-k">:</span> {
+      <span class="pl-s1"><span class="pl-pds">'</span>arale<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>https://a.alipayobjects.com/arale<span class="pl-pds">'</span></span>,
+      <span class="pl-s1"><span class="pl-pds">'</span>jquery<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>https://a.alipayobjects.com/jquery<span class="pl-pds">'</span></span>
+    },
+
+    <span class="pl-c">// 设置别名，方便调用</span>
+    alias<span class="pl-k">:</span> {
+      <span class="pl-s1"><span class="pl-pds">'</span>class<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>arale/class/1.0.0/class<span class="pl-pds">'</span></span>,
+      <span class="pl-s1"><span class="pl-pds">'</span>jquery<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>jquery/jquery/1.10.1/jquery<span class="pl-pds">'</span></span>
+    }
+
+  });</pre>
+     </div>
+
+  <p>更多配置项请参考：<a title="配置" class="issue-link" href="https://github.com/seajs/seajs/issues/262">#262</a></p>
+
+  <h3>seajs.use</h3>
+
+  <p>用来在页面中加载一个或多个模块。</p>
+
+  <div class="highlight highlight-js"><pre><span class="pl-c">// 加载一个模块</span>
+  seajs.use(<span class="pl-s1"><span class="pl-pds">'</span>./a<span class="pl-pds">'</span></span>);
+
+  <span class="pl-c">// 加载一个模块，在加载完成时，执行回调</span>
+  seajs.use(<span class="pl-s1"><span class="pl-pds">'</span>./a<span class="pl-pds">'</span></span>, <span class="pl-st">function</span>(<span class="pl-vpf">a</span>) {
+    a.doSomething();
+  });
+
+  <span class="pl-c">// 加载多个模块，在加载完成时，执行回调</span>
+  seajs.use([<span class="pl-s1"><span class="pl-pds">'</span>./a<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>./b<span class="pl-pds">'</span></span>], <span class="pl-st">function</span>(<span class="pl-vpf">a</span>, <span class="pl-vpf">b</span>) {
+    a.doSomething();
+    b.doSomething();
+  });</pre></div>
+
+  <p>更多用法请参考：<a title="模块的加载启动" class="issue-link" href="https://github.com/seajs/seajs/issues/260">#260</a></p>
+
+  <h3>define</h3>
+
+  <p>用来定义模块。Sea.js 推崇一个模块一个文件，遵循统一的写法：</p>
+
+  <div class="highlight highlight-js"><pre>define(<span class="pl-st">function</span>(<span class="pl-vpf">require</span>, <span class="pl-vpf">exports</span>, <span class="pl-vpf">module</span>) {
+
+    <span class="pl-c">// 模块代码</span>
+
+  });</pre></div>
+
+  <p>也可以手动指定模块 id 和依赖，详情请参考：<a title="CMD 模块定义规范" class="issue-link" href="https://github.com/seajs/seajs/issues/242">#242</a><br>
+  <code>require</code>, <code>exports</code> 和 <code>module</code> 三个参数可酌情省略，具体用法如下。</p>
+
+  <h3>require</h3>
+
+  <p><code>require</code> 用来获取指定模块的接口。</p>
+
+  <div class="highlight highlight-js"><pre>define(<span class="pl-st">function</span>(<span class="pl-vpf">require</span>) {
+
+    <span class="pl-c">// 获取模块 a 的接口</span>
+    <span class="pl-s">var</span> a <span class="pl-k">=</span> <span class="pl-s3">require</span>(<span class="pl-s1"><span class="pl-pds">'</span>./a<span class="pl-pds">'</span></span>);
+
+    <span class="pl-c">// 调用模块 a 的方法</span>
+    a.doSomething();
+  });</pre></div>
+
+  <p>注意，<code>require</code> 只接受字符串直接量作为参数，详细约定请阅读：<a title="require 书写约定" class="issue-link" href="https://github.com/seajs/seajs/issues/259">#259</a></p>
+
+  <h3>require.async</h3>
+
+  <p>用来在模块内部异步加载一个或多个模块。</p>
+
+  <div class="highlight highlight-js"><pre>define(<span class="pl-st">function</span>(<span class="pl-vpf">require</span>) {
+
+    <span class="pl-c">// 异步加载一个模块，在加载完成时，执行回调</span>
+    <span class="pl-s3">require</span>.async(<span class="pl-s1"><span class="pl-pds">'</span>./b<span class="pl-pds">'</span></span>, <span class="pl-st">function</span>(<span class="pl-vpf">b</span>) {
+      b.doSomething();
+    });
+
+    <span class="pl-c">// 异步加载多个模块，在加载完成时，执行回调</span>
+    <span class="pl-s3">require</span>.async([<span class="pl-s1"><span class="pl-pds">'</span>./c<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>./d<span class="pl-pds">'</span></span>], <span class="pl-st">function</span>(<span class="pl-vpf">c</span>, <span class="pl-vpf">d</span>) {
+      c.doSomething();
+      d.doSomething();
+    });
+
+  });</pre></div>
+
+  <p>详细说明请参考：<a title="CMD 模块定义规范" class="issue-link" href="https://github.com/seajs/seajs/issues/242">#242</a></p>
+
+  <h3>exports</h3>
+
+  <p>用来在模块内部对外提供接口。</p>
+
+  <div class="highlight highlight-js"><pre>define(<span class="pl-st">function</span>(<span class="pl-vpf">require</span>, <span class="pl-vpf">exports</span>) {
+
+    <span class="pl-c">// 对外提供 foo 属性</span>
+    <span class="pl-sv">exports</span>.foo <span class="pl-k">=</span> <span class="pl-s1"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span>;
+
+    <span class="pl-c">// 对外提供 doSomething 方法</span>
+    <span class="pl-s3">exports</span>.<span class="pl-en">doSomething</span> <span class="pl-k">=</span> <span class="pl-st">function</span>() {};
+
+  });</pre></div>
+
+  <p>详细说明请参考：<a title="CMD 模块定义规范" class="issue-link" href="https://github.com/seajs/seajs/issues/242">#242</a></p>
+
+  <h3>module.exports</h3>
+
+  <p>与 <code>exports</code> 类似，用来在模块内部对外提供接口。</p>
+
+  <div class="highlight highlight-js"><pre>define(<span class="pl-st">function</span>(<span class="pl-vpf">require</span>, <span class="pl-vpf">exports</span>, <span class="pl-vpf">module</span>) {
+
+    <span class="pl-c">// 对外提供接口</span>
+    <span class="pl-sv">module</span>.exports <span class="pl-k">=</span> {
+      name<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>a<span class="pl-pds">'</span></span>,
+      <span class="pl-en">doSomething</span>: <span class="pl-st">function</span>() {};
+    };
+
+  });</pre></div>
+
+  <p><code>module.exports</code> 与 <code>exports</code> 的区别，以及详细说明请参考：<a title="CMD 模块定义规范" class="issue-link" href="https://github.com/seajs/seajs/issues/242">#242</a></p>
+  <hr>
+  <p>以上 7 个接口是最常用的，要牢记于心。</p>
+  <p>这里提供一个不错的社区贡献的 API 文档：<a href="http://yslove.net/seajs/">http://yslove.net/seajs/</a></p>
+        </div>
+
+      </div>
+
+    </div>
+</div>

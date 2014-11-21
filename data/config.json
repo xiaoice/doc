@@ -26,5 +26,21 @@
     "formatJson":{
         "title":"JSON格式化",
         "module":"tool"
+    },
+    "469e117478":{
+        "title":"jquery API",
+        "module":"lib"
+    },
+    "bf22c5579f":{
+        "title":"12321",
+        "module":"plugin"
+    },
+    "a71a1eea0e":{
+        "title":"Sea.js API",
+        "module":"lib"
+    },
+    "6d366f036b":{
+        "title":"前端编码参考规范",
+        "module":"doc"
     }
 }

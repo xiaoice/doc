@@ -8,7 +8,7 @@
     define(["../../lib/codemirror"], mod);
   else // Plain browser env
     mod(CodeMirror);
-})(function(CodeMirror) {
+})(function() {
   "use strict";
 
   CodeMirror.defineOption("fullScreen", false, function(cm, val, old) {

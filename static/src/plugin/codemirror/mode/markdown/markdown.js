@@ -8,7 +8,7 @@
     define(["../../lib/codemirror", "../xml/xml"], mod);
   else // Plain browser env
     mod(CodeMirror);
-})(function(CodeMirror) {
+})(function() {
 "use strict";
 
 CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
