@@ -38,5 +38,21 @@
     "6d366f036b":{
         "title":"前端编码参考规范",
         "module":"doc"
+    },
+    "efcf42548e":{
+        "title":"ddddd",
+        "module":"plugin"
+    },
+    "34cb01e185":{
+        "title":"link",
+        "module":"plugin"
+    },
+    "6004b6954a":{
+        "title":"推广明细",
+        "module":"plugin"
+    },
+    "df71647cd0":{
+        "title":"ttt",
+        "module":"plugin"
     }
 }

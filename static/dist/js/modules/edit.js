@@ -27,7 +27,7 @@ define('modules/edit', ['jquery','codemirror','codemirrorHtml','codemirrorFullsc
         },
         theme: "monokai",
         styleActiveLine: true, //line选择是是否加亮
-        lineWrapping: false //是否自动换行
+        lineWrapping: true //是否自动换行
     });
     //editor.foldCode(CodeMirror.Pos(13, 0));
 
