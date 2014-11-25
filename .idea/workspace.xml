@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b4d152b-2944-4681-9663-cfe26ef80a3f" name="添加接口列表 (cherry picked from commit b87266b)" comment="添加接口列表&#10;(cherry picked from commit b87266b)" />
-    <list id="ef997211-b8d1-499a-b2f5-d9b1d7bc0451" name="Rejected commit: 添加接口列表 (cherry picked from commit b87266b)" comment="添加接口列表&#10;(cherry picked from commit b87266b)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/tpl/jquery/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl.html" />
+    <list default="true" id="4b4d152b-2944-4681-9663-cfe26ef80a3f" name="添加接口列表 (cherry picked from commit b87266b)" comment="添加接口列表&#10;(cherry picked from commit b87266b)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doc.iws" />
@@ -369,7 +364,11 @@
       <created>1416904465372</created>
       <updated>1416904465372</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加接口列表&#10;                                   (cherry picked from commit b87266b)">
+      <created>1416904520201</created>
+      <updated>1416904520201</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -454,9 +453,9 @@
     <MESSAGE value="init" />
     <MESSAGE value="支持 新增、修改、删除功能" />
     <MESSAGE value="重构文件存储json数据格式" />
-    <MESSAGE value="添加接口列表&#10;                                   (cherry picked from commit b87266b)" />
     <MESSAGE value="添加接口列表&#10;(cherry picked from commit b87266b)" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加接口列表&#10;(cherry picked from commit b87266b)" />
+    <MESSAGE value="添加接口列表&#10;                                   (cherry picked from commit b87266b)" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加接口列表&#10;                                   (cherry picked from commit b87266b)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
