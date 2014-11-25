@@ -1,10 +1,10 @@
-/**
- * Created by xiaoice on 2014/10/23.
- */
 var express = require('express'),
     router = express.Router(),
     util = require('../util/util'),
+    pageRouterAjax = require('./pageRouterAjax'),
     fs=require("fs");
+
+router.use(pageRouterAjax);
 
 //编辑页面源代码
 router.get('/edit.html', function (req, res) {
