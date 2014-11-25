@@ -4,7 +4,6 @@ var server = require('http').Server(app);
 var path = require('path');
 var ejs = require('ejs');
 var router = require('./routers/pageRouter');
-var routerAjax = require('./routers/pageRouterAjax');
 var favicon = require('static-favicon');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -17,7 +16,7 @@ app.use(favicon());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(express.static(path.join(__dirname, 'static/dist')));
-app.use('/', [router,routerAjax]);
+app.use('/',router);
 
 
 // development only

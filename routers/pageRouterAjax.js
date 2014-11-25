@@ -1,10 +1,8 @@
-/**
- * Created by xiaoice on 2014/10/23.
- */
 var express = require('express'),
     router = express.Router(),
     fs=require("fs"),
     util = require('../util/util'),
+    alimama = require('../controller/alimama'),
     result=util.result;
 
 //注销
@@ -16,6 +14,92 @@ router.get('/loginOut.do', function (req, res) {
         });
     }
 });
+
+
+//登录
+router.get('/alimamaLogin.html', function (req, res) {
+    res.redirect('https://login.taobao.com/member/login.jhtml?style=minisimple&from=alimama');
+});
+
+//获取接口集合
+router.get(/\/(getGroupList|getList|getLink|getUnionList).do/, function (req, res) {
+    alimama[req.params[0]]({
+        success:function(data,status,headers){
+            if(data){
+                res.send(result.ok(JSON.parse(data).data));
+            }else{
+                res.redirect('/alimamaLogin.html');
+            }
+        },
+        error:function(err){
+            res.send(result.error(err));
+        }
+    });
+});
+
+/*//获取群组列表
+router.get('/getGroupList.do', function (req, res) {
+    alimama.getGroupList({
+        success:function(data,status,headers){
+            if(data){
+                res.send(result.ok(JSON.parse(data).data));
+            }else{
+                res.redirect('/alimamaLogin.html');
+            }
+        },
+        error:function(err){
+            res.send(result.error(err));
+        }
+    });
+});
+
+//获取数据列表
+router.get('/getList.do', function (req, res) {
+    alimama.getList({
+        success:function(data,status,headers){
+            if(data){
+                res.send(result.ok(JSON.parse(data).data));
+            }else{
+                res.redirect('/alimamaLogin.html');
+            }
+        },
+        error:function(err){
+            res.send(result.error(err));
+        }
+    });
+});
+
+//获取最新商品列表
+router.get('/getLink.do', function (req, res) {
+    alimama.getLink({
+        success:function(data,status,headers){
+            if(data){
+                res.send(result.ok(JSON.parse(data).data));
+            }else{
+                res.redirect('/alimamaLogin.html');
+            }
+        },
+        error:function(err){
+            res.send(result.error(err));
+        }
+    });
+});
+
+//获取推广列表
+router.get('/getUnionList.do', function (req, res) {
+    alimama.getUnionList({
+        success:function(data,status,headers){
+            if(data){
+                res.send(result.ok(JSON.parse(data).data));
+            }else{
+                res.redirect('/alimamaLogin.html');
+            }
+        },
+        error:function(err){
+            res.send(result.error(err));
+        }
+    });
+});*/
 
 //删除文件
 router.post(/(doc|plugin|lib|tool)\/delFile.do/, function (req, res) {
