@@ -6,12 +6,9 @@ define('modules/module', ['jquery'],function(require,exports,module){
         var $this=$(this),id,item=$this.find(".item");
         if(item.attr("href")){
             id=item.attr("href").replace(/\/(.*)\//,"").replace(".html","");
-            if(!$this.hasClass("toolbar")){
-                $this.append('<span class="toolbar"><a href="/edit.html?id='+id+'" class="label label-primary">修改</a><a class="label label-danger">删除</a></span>');
-            }
+            $("#toolbar").remove();
+            $this.append('<span id="toolbar" class="toolbar"><a href="/edit.html?id='+id+'" class="label label-primary">修改</a><a class="label label-danger">删除</a></span>');
         }
-    }).on("mouseleave",".list-group-item",function(){
-        $(this).find('.toolbar').remove();
     }).on("click",".list-group-item .label-danger",function(){
         var $this=$(this)
             ,url=$this.parent().prev().attr("href")

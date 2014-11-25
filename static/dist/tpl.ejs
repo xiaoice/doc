@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include top %>
+    <title><%= title%></title>
+</head>
+<body class="body-layer">
+<% include head %>
+<bodyer>
+    <input id="input_nav" type="hidden" value="<%= module%>">
+    <div class="body-wrapper">
+        <%- render%>
+    </div>
+</bodyer>
+</body>
+</html>
+<script>
+    lib.use(['modules/render']);
+</script>
