@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="1bd11b19-9a05-4239-9431-80541b7d3fbb" name="Default" comment="添加接口列表&#10;                                   (cherry picked from commit b87266b)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <list default="true" id="4b4d152b-2944-4681-9663-cfe26ef80a3f" name="添加接口列表 (cherry picked from commit b87266b)" comment="添加接口列表&#10;(cherry picked from commit b87266b)">
+    <list default="true" id="4b4d152b-2944-4681-9663-cfe26ef80a3f" name="添加接口列表 (cherry picked from commit b87266b)" comment="添加接口列表&#10;(cherry picked from commit b87266b)" />
+    <list id="ef997211-b8d1-499a-b2f5-d9b1d7bc0451" name="Rejected commit: 添加接口列表 (cherry picked from commit b87266b)" comment="添加接口列表&#10;(cherry picked from commit b87266b)">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dd.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/tpl/jquery/index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +53,7 @@
       <file leaf-file-name="alimama.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/alimama.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33975086" vertical-offset="0" max-vertical-offset="2300">
+            <state vertical-scroll-proportion="0.51903117" vertical-offset="0" max-vertical-offset="2300">
               <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
@@ -343,7 +341,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1bd11b19-9a05-4239-9431-80541b7d3fbb" name="Default" comment="" />
+      <changelist id="" name="Default" comment="" />
       <created>1413613003090</created>
       <updated>1413613003090</updated>
     </task>
@@ -367,7 +365,11 @@
       <created>1416882840287</created>
       <updated>1416882840287</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加接口列表&#10;                                   (cherry picked from commit b87266b)">
+      <created>1416904465372</created>
+      <updated>1416904465372</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -394,11 +396,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5102703" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23243243" sideWeight="0.49947312" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15753424" sideWeight="0.7721519" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15753424" sideWeight="0.7721519" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17945945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13856691" sideWeight="0.2278481" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23243243" sideWeight="0.50052685" order="7" side_tool="true" content_ui="tabs" />
@@ -408,7 +411,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -452,6 +454,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="支持 新增、修改、删除功能" />
     <MESSAGE value="重构文件存储json数据格式" />
+    <MESSAGE value="添加接口列表&#10;                                   (cherry picked from commit b87266b)" />
     <MESSAGE value="添加接口列表&#10;(cherry picked from commit b87266b)" />
     <option name="LAST_COMMIT_MESSAGE" value="添加接口列表&#10;(cherry picked from commit b87266b)" />
   </component>
@@ -811,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.072463766" vertical-offset="0" max-vertical-offset="552">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="298" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routers/pageRouterAjax.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="4500">
@@ -837,7 +832,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/alimama.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33975086" vertical-offset="0" max-vertical-offset="2300">
+        <state vertical-scroll-proportion="0.51903117" vertical-offset="0" max-vertical-offset="2300">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding />
         </state>
