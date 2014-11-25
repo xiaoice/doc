@@ -2,9 +2,34 @@ var express = require('express'),
     router = express.Router(),
     util = require('../util/util'),
     pageRouterAjax = require('./pageRouterAjax'),
+    alimama = require('../controller/alimama'),
     fs=require("fs");
 
 router.use(pageRouterAjax);
+
+//获取列表页面
+router.get('/t9.html', function (req, res) {
+    res.render('t9');
+});
+
+//获取详细信息页面
+router.get('/buy.html', function (req, res) {
+    var id=req.query.id;
+    alimama.getLink({
+        auctionid:id,
+        success:function(data,status,headers){
+            if(data){
+                //res.redirect(JSON.parse(data).data.eliteUrl);
+                res.redirect(JSON.parse(data).data.clickUrl);
+            }else{
+                res.redirect('/alimamaLogin.html');
+            }
+        },
+        error:function(err){
+            res.send(result.error(err));
+        }
+    });
+});
 
 //编辑页面源代码
 router.get('/edit.html', function (req, res) {
