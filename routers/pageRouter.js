@@ -1,10 +1,11 @@
+/**
+ * Created by xiaoice on 2014/10/23.
+ */
 var express = require('express'),
     router = express.Router(),
     util = require('../util/util'),
-    routerAjax = require('./pageRouterAjax'),
     fs=require("fs");
 
-router.use(routerAjax);
 //编辑页面源代码
 router.get('/edit.html', function (req, res) {
     var id=req.query.id,module,title,url;
@@ -33,6 +34,7 @@ router.get('/edit.html', function (req, res) {
         return res.send(404);
     }
 });
+
 
 //主页-一级页面
 router.get(/(doc|plugin|lib|tool).html/, function (req, res) {

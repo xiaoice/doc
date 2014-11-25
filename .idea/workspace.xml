@@ -1,776 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd11b19-9a05-4239-9431-80541b7d3fbb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/2wm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/2wm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/640x960.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/640x960.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/arrow_down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/arrow_down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/arrow_up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/arrow_up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/base.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/base.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/empty.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/empty.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/fl_jt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/fl_jt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/folder.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/folder.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/folderopen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/folderopen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/join.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/join.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/joinbottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/joinbottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/jquery_114x114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/jquery_114x114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/jquery_320x460.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/jquery_320x460.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/jquery_320x480.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/jquery_320x480.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/jquery_57x57.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/jquery_57x57.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/minusbottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/minusbottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/new.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/new.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/page.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/page.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/plusbottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/plusbottom.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/qqgroup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/img/qqgroup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/lib/469e117478.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/doc/6d366f036b.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/__left.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/lib/a71a1eea0e.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/addBack.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/addClass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/after.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/ajaxComplete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/ajaxError.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/ajaxSend.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/ajaxStart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/ajaxStop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/ajaxSuccess.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/all.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/andSelf.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/animate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/animated.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/append.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/appendTo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/attr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/attributeContains.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/attributeEndsWith.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/attributeEquals.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/attributeHas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/attributeMultiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/attributeNotEqual.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/attributeStartsWith.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/before.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/plugin/bf22c5579f.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/bind.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/blur.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/bugandUpdate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/button.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.disable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.empty.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.fire.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.fireWith.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.fired.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.has.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.lock.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.locked.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/callbacks.remove.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/change.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/cheatsheet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/checkbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/checked.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/child.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/children.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/clearQueue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/click.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/clone.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/closest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/contains.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/contents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/context.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/cssFormat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/data.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/data.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/dblclick.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.always.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.done.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.fail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.isRejected.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.isResolved.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.notify.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.notifyWith.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.pipe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.progress.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.promise.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.reject.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.rejectWith.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.resolve.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.resolveWith.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.state.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/deferred.then.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/delay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/delegate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/dequeue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/descendant.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/detach.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/die.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/disabled.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/style/dtree.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/style/dtree.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/dtree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/dtree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/each.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/element.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/empty.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/empty_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/enabled.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/end.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/eq.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/eq_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/error.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/even.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.currentTarget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.delegateTarget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.isDefaultPrevented.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.isImmediatePropagationStopped.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.isPropagationStopped.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.namespace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.pageX.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.pageY.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.preventDefault.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.relatedTarget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.result.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.stopImmediatePropagation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.stopPropagation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.target.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.timeStamp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.type.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/event.which.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/fadeIn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/fadeOut.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/fadeTo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/fadeToggle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/file.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/filter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/find.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/finish.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/first.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/firstChild.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/firstOfType.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/first_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/focus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/focus_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/focusin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/focusout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/get.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/gt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/has.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/hasClass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/has_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/height.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/hidden_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/hide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/hover.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/html.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/html5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/id.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/image.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/index.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/index_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/innerHeight.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/innerWidth.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/insertAfter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/insertBefore.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/is.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.ajaxPrefilter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.ajaxSetup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.boxModel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.browser.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.browser.version.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.callbacks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.contains.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.cssHooks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.each.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.error.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.extend.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.extend_object.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.fn.extend.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.fx.interval.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.fx.off.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.get.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.getJSON.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.getScript.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.grep.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.holdReady.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.inArray.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.isArray.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.isEmptyObject.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.isFunction.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.isNumeric.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.isPlainObject.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.isWindow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.makeArray.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.merge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.noConflict.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.noop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.param.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.parseJSON.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.parseXML.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.proxy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.sub.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.support.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.toarray.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.trim.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.type.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.unique.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery.when.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery_callback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery_html_ownerDocument.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jQuery_selector_context.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/jquery.autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/jquery.autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jquery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/jsFormat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/jsformat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/jsformat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/keydown.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/keypress.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/keyup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/lang.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/last.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/lastChild.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/lastOfType.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/last_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/length.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/live.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/load.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/lt.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/m.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/mousedown.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/mouseenter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/mouseleave.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/mousemove.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/mouseout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/mouseover.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/mouseup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/multiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/newUpdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/newUpdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/next.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/nextAll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/nextUntil.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/next_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/not.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/not_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/nthChild.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/nthLastChild.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/nthLastOfType.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/nthOfType.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/odd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/off.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/offset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/offsetParent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/on.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/one.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/onlyChild.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/onlyOfType.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/outerHeight.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/outerWidth.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/parent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/parent_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/parents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/parentsUntil.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/password.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/position.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/prepend.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/prependTo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/prev.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/prevAll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/prevUntil.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/prop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/queue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/radio.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/ready.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/reg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/reg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/js/regbase.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/js/regbase.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/regexChe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/regexp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/remove.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/removeAttr.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/removeClass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/removeData.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/removeProp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/replaceAll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/replaceWith.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/reset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/resize.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/root.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/scroll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/scrollLeft.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/scrollTop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/selected.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/selector.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/serialize.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/serializearray.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/siblings.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/siblings_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/size.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/slice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/slideDown.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/slideToggle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/slideUp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/stop.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/style/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/style/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/submit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/submit_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/target.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/text.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/text_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/toggle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/toggleClass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/trigger.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/triggerHandler.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/unbind.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/undelegate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/unload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/unwrap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/val.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/visible.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/width.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/wrap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/wrapAll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/src/tpl/jquery/wrapInner.html" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\__left.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\about.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\add.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\addBack.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\addClass.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\after.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\ajaxComplete.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\ajaxError.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\ajaxSend.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\ajaxStart.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\ajaxStop.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\ajaxSuccess.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\all.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\andSelf.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\animate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\animated.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\append.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\appendTo.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\attr.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\attributeContains.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\attributeEndsWith.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\attributeEquals.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\attributeHas.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\attributeMultiple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\attributeNotEqual.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\attributeStartsWith.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\before.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\bind.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\blur.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\bugandUpdate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\button.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.add.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.disable.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.empty.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.fire.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.fireWith.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.fired.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.has.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.lock.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.locked.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\callbacks.remove.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\change.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\cheatsheet.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\checkbox.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\checked.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\child.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\children.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\class.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\clearQueue.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\click.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\clone.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\closest.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\contains.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\contents.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\context.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\css.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\cssFormat.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\data.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\dblclick.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.always.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.done.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.fail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.isRejected.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.isResolved.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.notify.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.notifyWith.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.pipe.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.progress.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.promise.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.reject.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.rejectWith.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.resolve.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.resolveWith.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.state.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\deferred.then.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\delay.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\delegate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\dequeue.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\descendant.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\detach.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\die.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\disabled.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\each.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\element.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\empty.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\empty_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\enabled.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\end.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\eq.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\eq_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\error.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\even.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.currentTarget.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.data.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.delegateTarget.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.isDefaultPrevented.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.isImmediatePropagationStopped.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.isPropagationStopped.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.namespace.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.pageX.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.pageY.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.preventDefault.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.relatedTarget.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.result.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.stopImmediatePropagation.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.stopPropagation.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.target.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.timeStamp.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.type.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\event.which.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\fadeIn.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\fadeOut.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\fadeTo.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\fadeToggle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\file.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\filter.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\find.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\finish.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\first.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\firstChild.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\firstOfType.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\first_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\focus.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\focus_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\focusin.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\focusout.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\get.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\gt.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\has.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\hasClass.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\has_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\header.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\height.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\hidden_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\hide.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\hover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\html.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\html5.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\id.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\image.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\2wm.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\640x960.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\arrow_down.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\arrow_up.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\base.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\chart.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\empty.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\fl_jt.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\folder.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\folderopen.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\join.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\joinbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\jquery_114x114.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\jquery_320x460.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\jquery_320x480.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\jquery_57x57.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\line.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\minus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\minusbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\new.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\page.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\plus.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\plusbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\img\qqgroup.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\index.htm" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\index_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\innerHeight.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\innerWidth.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\input.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\insertAfter.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\insertBefore.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\is.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.ajaxPrefilter.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.ajaxSetup.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.boxModel.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.browser.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.browser.version.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.callbacks.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.contains.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.cssHooks.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.data.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.each.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.error.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.extend.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.extend_object.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.fn.extend.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.fx.interval.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.fx.off.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.get.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.getJSON.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.getScript.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.grep.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.holdReady.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.inArray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.isArray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.isEmptyObject.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.isFunction.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.isNumeric.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.isPlainObject.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.isWindow.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.makeArray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.map.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.merge.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.noConflict.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.noop.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.param.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.parseJSON.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.parseXML.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.post.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.proxy.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.sub.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.support.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.toarray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.trim.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.type.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.unique.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery.when.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery_callback.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery_html_ownerDocument.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jQuery_selector_context.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jquery.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\jsFormat.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\base.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\data.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\dtree.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\jquery.autocomplete.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\js.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\jsformat.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\newUpdate.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\reg.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\js\regbase.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\keydown.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\keypress.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\keyup.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\lang.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\last.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\lastChild.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\lastOfType.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\last_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\length.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\live.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\load.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\lt.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\m.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\map.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\mousedown.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\mouseenter.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\mouseleave.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\mousemove.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\mouseout.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\mouseover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\mouseup.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\multiple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\next.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\nextAll.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\nextUntil.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\next_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\not.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\not_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\nthChild.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\nthLastChild.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\nthLastOfType.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\nthOfType.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\odd.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\off.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\offset.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\offsetParent.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\on.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\one.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\onlyChild.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\onlyOfType.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\outerHeight.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\outerWidth.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\parent.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\parent_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\parents.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\parentsUntil.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\password.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\position.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\prepend.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\prependTo.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\prev.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\prevAll.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\prevUntil.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\prop.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\queue.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\radio.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\ready.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\regexChe.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\regexp.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\remove.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\removeAttr.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\removeClass.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\removeData.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\removeProp.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\replaceAll.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\replaceWith.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\reset.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\resize.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\root.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\scroll.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\scrollLeft.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\scrollTop.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\select.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\selected.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\selector.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\serialize.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\serializearray.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\show.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\siblings.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\siblings_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\size.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\slice.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\slideDown.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\slideToggle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\slideUp.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\stop.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\style\dtree.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\style\style.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\submit.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\submit_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\target.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\text.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\text_1.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\toggle.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\toggleClass.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\trigger.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\triggerHandler.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\unbind.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\undelegate.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\unload.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\unwrap.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\val.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\visible.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\width.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\wrap.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\wrapAll.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\project\doc\data\tpl\jquery\wrapInner.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/tpl/jquery/__left.ejs" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/__left.ejs" />
+    <list default="true" id="1bd11b19-9a05-4239-9431-80541b7d3fbb" name="Default" comment="调整样式">
+      <change type="DELETED" beforePath="F:\project\doc\data\plugin\bf22c5579f.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/lib/a71a1eea0e.html" afterPath="$PROJECT_DIR$/data/lib/a71a1eea0e.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/css/app.css" afterPath="$PROJECT_DIR$/static/dist/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/src/css/app.css" afterPath="$PROJECT_DIR$/static/src/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/tpl/jquery/cheatsheet.ejs" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/cheatsheet.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/config.json" afterPath="$PROJECT_DIR$/data/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/tpl/jquery/cssFormat.ejs" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/cssFormat.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/doc.html" afterPath="$PROJECT_DIR$/data/doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/js/modules/edit.js" afterPath="$PROJECT_DIR$/static/dist/js/modules/edit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/src/js/modules/edit.js" afterPath="$PROJECT_DIR$/static/src/js/modules/edit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/plugin/codemirror/addon/display/fullscreen.js" afterPath="$PROJECT_DIR$/static/dist/plugin/codemirror/addon/display/fullscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/src/plugin/codemirror/addon/display/fullscreen.js" afterPath="$PROJECT_DIR$/static/src/plugin/codemirror/addon/display/fullscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/tpl/jquery/jsFormat.ejs" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/jsFormat.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/lib.html" afterPath="$PROJECT_DIR$/data/lib.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/js/lib.js" afterPath="$PROJECT_DIR$/static/dist/js/lib.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/plugin/codemirror/mode/markdown/markdown.js" afterPath="$PROJECT_DIR$/static/dist/plugin/codemirror/mode/markdown/markdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/src/plugin/codemirror/mode/markdown/markdown.js" afterPath="$PROJECT_DIR$/static/src/plugin/codemirror/mode/markdown/markdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routers/pageRouter.js" afterPath="$PROJECT_DIR$/routers/pageRouter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/plugin.html" afterPath="$PROJECT_DIR$/data/plugin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/tpl/jquery/regexChe.ejs" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/regexChe.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/dist/render.ejs" afterPath="$PROJECT_DIR$/static/dist/render.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/src/render.html" afterPath="$PROJECT_DIR$/static/src/render.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/src/js/sea.config.js" afterPath="$PROJECT_DIR$/static/src/js/sea.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\project\doc\data\tpl\jquery\Thumbs.db" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/Thumbs.db" />
-      <change type="MOVED" beforePath="E:\project\doc\data\tpl\jquery\img\Thumbs.db" afterPath="$PROJECT_DIR$/static/dist/tpl/jquery/img/Thumbs.db" />
+      <change type="MOVED" beforePath="F:\project\doc\.idea\workspace.xml" afterPath="$PROJECT_DIR$/projectFilesBackup/.idea/workspace.xml" />
     </list>
     <ignored path="doc.iws" />
     <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -790,31 +33,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/src/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="9240">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="996" max-vertical-offset="9220">
+              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/dist/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5882353" vertical-offset="0" max-vertical-offset="880">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.27616927" vertical-offset="996" max-vertical-offset="9220">
+              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="edit.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/src/js/modules/edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="520" max-vertical-offset="980">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="980">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -828,61 +71,16 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="xx" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/dist/plugin/codemirror/mode/javascript/javascript.js" />
-        <option value="$PROJECT_DIR$/static/src/plugin/codemirror/mode/javascript/javascript.js" />
-        <option value="$PROJECT_DIR$/static/src/plugin/codemirror/mode/htmlmixed/htmlmixed.js" />
-        <option value="$PROJECT_DIR$/static/src/plugin/codemirror/mode/css/css.js" />
-        <option value="$PROJECT_DIR$/static/src/plugin/codemirror/mode/xml/xml.js" />
-        <option value="$PROJECT_DIR$/data/test.html" />
-        <option value="$PROJECT_DIR$/static/src/top.html" />
-        <option value="$PROJECT_DIR$/data/doc/before_and_after_doc_1_0.html" />
-        <option value="$PROJECT_DIR$/static/src/js/modules/util.js" />
-        <option value="$PROJECT_DIR$/data/plugin/jquery.touch.html" />
-        <option value="$PROJECT_DIR$/routers/util.js" />
-        <option value="$PROJECT_DIR$/util/result.js" />
-        <option value="$PROJECT_DIR$/static/src/renderIndex.html" />
-        <option value="$PROJECT_DIR$/static/src/head.html" />
-        <option value="$PROJECT_DIR$/static/src/js/modules/plugin.js" />
-        <option value="$PROJECT_DIR$/static/src/js/modules/render.js" />
-        <option value="$PROJECT_DIR$/static/src/js/modules/global.js" />
-        <option value="$PROJECT_DIR$/static/src/before_and_after_doc_1_0.html" />
-        <option value="$PROJECT_DIR$/ttt.js" />
-        <option value="$PROJECT_DIR$/ttt.html" />
-        <option value="$PROJECT_DIR$/config.json" />
-        <option value="$PROJECT_DIR$/util/util.js" />
-        <option value="$PROJECT_DIR$/data/plugin/index.html" />
-        <option value="$PROJECT_DIR$/static/src/plugin.html" />
-        <option value="$PROJECT_DIR$/data/doc.html" />
-        <option value="$PROJECT_DIR$/data/lib.html" />
-        <option value="$PROJECT_DIR$/data/tool.html" />
-        <option value="$PROJECT_DIR$/data/plugin.html" />
-        <option value="$PROJECT_DIR$/static/src/lib.html" />
-        <option value="$PROJECT_DIR$/static/src/doc.html" />
-        <option value="$PROJECT_DIR$/static/src/tool.html" />
-        <option value="$PROJECT_DIR$/static/src/js/modules/module.js" />
-        <option value="$PROJECT_DIR$/static/src/formatJson.html" />
-        <option value="$PROJECT_DIR$/static/src/runjs.html" />
-        <option value="$PROJECT_DIR$/routers/pageRouterAjax.js" />
-        <option value="$PROJECT_DIR$/static/src/edit.html" />
-        <option value="$PROJECT_DIR$/data/config.json" />
-        <option value="$PROJECT_DIR$/static/src/tpl.html" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/routers/pageRouter.js" />
-        <option value="$PROJECT_DIR$/static/src/render.html" />
-        <option value="$PROJECT_DIR$/static/src/tpl/jquery/__left.html" />
-        <option value="$PROJECT_DIR$/static/src/tpl/jquery/index.html" />
-        <option value="$PROJECT_DIR$/static/src/tpl/jquery/cheatsheet.html" />
-        <option value="$PROJECT_DIR$/static/src/tpl/jquery/style/dtree.css" />
-        <option value="$PROJECT_DIR$/static/src/plugin/codemirror/mode/markdown/markdown.js" />
-        <option value="$PROJECT_DIR$/static/src/js/sea.config.js" />
-        <option value="$PROJECT_DIR$/static/src/plugin/codemirror/addon/display/fullscreen.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/static/src/js/modules/edit.js" />
         <option value="$PROJECT_DIR$/static/src/css/app.css" />
       </list>
     </option>
@@ -891,11 +89,78 @@
     <exe-path>D:\soft\node\node-global\bower.cmd</exe-path>
     <config-path>E:\project\doc\bower.json</config-path>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <task-name>dev-js</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>dev-js-lib</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>dev-css</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>dev-css-lib</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>dev-html</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>font</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>js-lib</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>css-lib</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>js</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>css</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>html</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jsp</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>usemin</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean" />
+            </dependencies>
+            <task-name>public</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="clean" />
+            </dependencies>
+            <task-name>default</task-name>
+          </GulpTaskState>
+        </tasks>
+      </GulpfileState>
+    </gulpfiles>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -923,7 +188,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -956,15 +220,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="preferences.sourceCode.JavaScript" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -987,6 +266,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1006,21 +286,9 @@
   </component>
   <component name="RunManager" selected="Node.js.app">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -1028,12 +296,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
@@ -1065,11 +327,22 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
-    <configuration default="false" name="app" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/soft/node/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="false" name="app" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/Java/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <RunnerSettings RunnerId="NodeJS.debug" />
       <RunnerSettings RunnerId="NodeJS.run" />
+      <RunnerSettings RunnerId="debuggableProgram" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
       <method />
     </configuration>
     <list size="1">
@@ -1078,28 +351,37 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\xiaoice\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1bd11b19-9a05-4239-9431-80541b7d3fbb" name="Default" comment="" />
       <created>1413613003090</created>
+      <option name="number" value="Default" />
       <updated>1413613003090</updated>
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1413617032456</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
       <updated>1413617032456</updated>
     </task>
     <task id="LOCAL-00002" summary="init">
       <created>1415097091779</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
       <updated>1415097091779</updated>
     </task>
     <task id="LOCAL-00003" summary="支持 新增、修改、删除功能">
       <created>1416305195467</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
       <updated>1416305195467</updated>
     </task>
     <task id="LOCAL-00004" summary="重构文件存储json数据格式">
       <created>1416533848796</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
       <updated>1416533848796</updated>
     </task>
     <option name="localTasksCounter" value="5" />
@@ -1126,27 +408,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20864865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23243243" sideWeight="0.49947312" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20745543" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23014587" sideWeight="0.49947312" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34035656" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2744807" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1591078" sideWeight="0.39349595" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32682925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1591078" sideWeight="0.39349595" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15753424" sideWeight="0.7721519" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27675676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13856691" sideWeight="0.2278481" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27645788" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1591078" sideWeight="0.6065041" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.032432433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1187,7 +471,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="支持 新增、修改、删除功能" />
     <MESSAGE value="重构文件存储json数据格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构文件存储json数据格式" />
+    <MESSAGE value="调整样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整样式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1200,6 +485,7 @@
       </breakpoints>
       <option name="time" value="48" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <PATH>
@@ -1214,6 +500,14 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/src/js/modules/edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="931">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/src/plugin/codemirror/mode/htmlmixed/htmlmixed.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="2540">
@@ -1309,13 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.8683068" vertical-offset="7671" max-vertical-offset="8940">
           <caret line="320" column="14" selection-start-line="320" selection-start-column="14" selection-end-line="320" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1524" max-vertical-offset="2420">
-          <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1552,28 +839,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/src/js/modules/edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="980">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="980">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/src/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="9240">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="996" max-vertical-offset="9220">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/static/dist/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5882353" vertical-offset="0" max-vertical-offset="880">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.27616927" vertical-offset="996" max-vertical-offset="9220">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
