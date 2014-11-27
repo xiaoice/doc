@@ -23,7 +23,7 @@ router.get('/add.do', function (req, res) {
     var fields="reservePrice,zkPrice,zkRate,zkType,calCommission,commissionRatePercent,userId,userType,userNumberId,nick,title,shopUrl,auctionUrl,pictUrl,groupIds,groupId,groupRate,groupCommission,totalNum,totalFee,auctionId,auctionType,auctionTag".split(',')
         ,pagelist,pageIndex,pageLength,pageVo,value
         ,vo
-        , i, j,field,resultOks=[],resultErrors=[]
+        , i, j,field,resultOks=[],resultErrors=[],voClick
         ,done=function(resultErrors,resultOks){
             res.send(result.ok({resultErrors:resultErrors,resultOks:resultOks}));
         };
@@ -41,19 +41,29 @@ router.get('/add.do', function (req, res) {
                             vo[field]=value;
                         }
                     }
-
-                    (function(pageIndex,auctionId){
-                        productDao.insert(vo,function(err,results){
-                            if(err){
-                                resultErrors.push(auctionId);
-                            }else{
-                                resultOks.push(auctionId);
+                    (function(vo){
+                        alimama.getLink({
+                            auctionid:vo.auctionId,
+                            groupid:vo.groupId,
+                            success:function(data){
+                                if(data){
+                                    voClick=JSON.parse(data).data;
+                                    vo.clickUrl=voClick.clickUrl;
+                                    vo.eliteUrl=voClick.eliteUrl;
+                                    productDao.insert(vo, function (err, results) {
+                                        if (err) {
+                                            resultErrors.push(vo);
+                                        } else {
+                                            resultOks.push(vo);
+                                        }
+                                        if ((resultErrors.length + resultOks.length) === pageLength) {
+                                            done(resultErrors, resultOks);
+                                        }
+                                    });
+                                }
                             }
-                            if((resultErrors.length+resultOks.length)===pageLength){
-                                done(resultErrors,resultOks);
-                            }
-                        })
-                    })(pageIndex,vo.auctionId);
+                        });
+                    })(vo);
                 }
             }else{
                 res.redirect('/alimamaLogin.html');

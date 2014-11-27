@@ -18,6 +18,8 @@ product.getVo=function(){
         ,shopUrl:undefined
         ,auctionUrl:undefined
         ,pictUrl:undefined
+        ,clickUrl:undefined
+        ,eliteUrl:undefined
         ,groupIds:undefined
         ,groupId:undefined
         ,groupRate:undefined
