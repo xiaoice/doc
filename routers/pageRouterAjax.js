@@ -2,6 +2,8 @@ var express = require('express'),
     router = express.Router(),
     fs=require("fs"),
     util = require('../util/util'),
+    productDao = require('../dao/productDao'),
+    productVo = require('../vo/productVo'),
     alimama = require('../controller/alimama'),
     result=util.result;
 
@@ -13,6 +15,54 @@ router.get('/loginOut.do', function (req, res) {
             return res.redirect("login.html");
         });
     }
+});
+
+//添加
+router.get('/add.do', function (req, res) {
+    //需要的字段名称
+    var fields="reservePrice,zkPrice,zkRate,zkType,calCommission,commissionRatePercent,userId,userType,userNumberId,nick,title,shopUrl,auctionUrl,pictUrl,groupIds,groupId,groupRate,groupCommission,totalNum,totalFee,auctionId,auctionType,auctionTag".split(',')
+        ,pagelist,pageIndex,pageLength,pageVo,value
+        ,vo
+        , i, j,field,resultOks=[],resultErrors=[]
+        ,done=function(resultErrors,resultOks){
+            res.send(result.ok({resultErrors:resultErrors,resultOks:resultOks}));
+        };
+    alimama.getList({
+        success:function(result,status,headers){
+            if(result){
+                pagelist=JSON.parse(result).data.pagelist,pageLength=pagelist.length;
+                for(pageIndex= 0;pageIndex<pageLength;pageIndex++){
+                    pageVo=pagelist[pageIndex];
+                    vo=productVo.getVo();
+                    vo.id=null;
+                    for(i=0,j=fields.length;i<j;i++){
+                        field=fields[i],value=pageVo[field];
+                        if(typeof value!=="undefined"){
+                            vo[field]=value;
+                        }
+                    }
+
+                    (function(pageIndex,auctionId){
+                        productDao.insert(vo,function(err,results){
+                            if(err){
+                                resultErrors.push(auctionId);
+                            }else{
+                                resultOks.push(auctionId);
+                            }
+                            if((resultErrors.length+resultOks.length)===pageLength){
+                                done(resultErrors,resultOks);
+                            }
+                        })
+                    })(pageIndex,vo.auctionId);
+                }
+            }else{
+                res.redirect('/alimamaLogin.html');
+            }
+        },
+        error:function(err){
+            res.send(result.error(err));
+        }
+    });
 });
 
 

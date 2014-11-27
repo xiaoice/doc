@@ -6,8 +6,8 @@ var alimama={};
 //获取headers
 function gerHeaders(opts){
     opts=opts||{};
-    opts.Cookie=opts.Cookie||"t=c8617f97cf53c70a3cb3c35df79f48e0; cna=Jir6DPR7rzYCAXeJEKg9SAqu; isg=B61F2E908541C9D1989C67DD067BAB9A; lzstat_uv=7149425371654599793|2650839@2650835@1774292@1774054@2876347; pub-message-center=1; cookie2=7a9f91ac76092d9b31829b77b736c9cd; _tb_token_=6279k4rLGtn; v=0; cookie32=48e7d7ed68560503fa6fbec4df0962cb; cookie31=NDcyNTc4MzUseGwzNjMyMjcwMDYsMzYzMjI3MDA2QHFxLmNvbSxUQg%3D%3D; alimamapwag=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NDsgcnY6MzMuMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8zMy4w; login=UIHiLt3xD8xYTw%3D%3D; alimamapw=SFgEAQYEBQFSUw8xCFFQB1IFBwMHVQABDgQBBQlbC1MHAAZVBwVRAwRSUlQ%3D; rurl=aHR0cDovL3d3dy5hbGltYW1hLmNvbS9pbmRleC5odG0%3D";
-    opts.Cookie=opts.Cookie.replace('6279k4rLGtn',opts._tb_token_||'6279k4rLGtn');
+    opts.Cookie=opts.Cookie||"t=c8617f97cf53c70a3cb3c35df79f48e0; cna=Jir6DPR7rzYCAXeJEKg9SAqu; isg=DD6F28985BD6D6EF992771EAFCC09D1F; lzstat_uv=7149425371654599793|2650839@2650835@1774292@1774054@2876347; pub-message-center=1; cookie2=de1cebbd2744818881fd2ecd36b52b06; _tb_token_=BXGkW2fdtn; v=0; cookie32=48e7d7ed68560503fa6fbec4df0962cb; cookie31=NDcyNTc4MzUseGwzNjMyMjcwMDYsMzYzMjI3MDA2QHFxLmNvbSxUQg%3D%3D; alimamapwag=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NDsgcnY6MzMuMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8zMy4w; login=WqG3DMC9VAQiUQ%3D%3D; alimamapw=SFgEAQYEBQFSUw8xCFFQB1IFBwMHVQABDgQBBQlbC1MHAAZVBwVRAwRSUlQ%3D";
+    opts.Cookie=opts.Cookie.replace('BXGkW2fdtn',opts._tb_token_||'BXGkW2fdtn');
     return {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Encoding": "gzip, deflate",
@@ -39,7 +39,7 @@ alimama.getGroupList=function(opts){
     opts.url=opts.url||'http://pub.alimama.com/group/getGroupInfoList.json?';
     opts.querys={
         _input_charset:opts._input_charset||'utf-8',
-        _tb_token_:opts._tb_token_||'6279k4rLGtn',
+        _tb_token_:opts._tb_token_||'BXGkW2fdtn',
         t:new Date().getTime()
     };
     get(opts);
@@ -51,7 +51,7 @@ alimama.getList=function(opts){
     opts.url=opts.url||'http://pub.alimama.com/group/searchGroupAuctionList.json?';
     opts.querys={
         _input_charset:opts._input_charset||'utf-8',
-        _tb_token_:opts._tb_token_||'6279k4rLGtn',
+        _tb_token_:opts._tb_token_||'BXGkW2fdtn',
         groupId:opts.adzoneid||1375950175666,                   //群组id
         sort:opts.auctionid||'_totalnum',                       //排序
         toPage:opts.groupid||1,                                 //第几页
@@ -67,7 +67,7 @@ alimama.getLink=function(opts){
     opts.url=opts.url||'http://pub.alimama.com/common/code/getAuctionCode.json?';
     opts.querys={
         _input_charset:opts._input_charset||'utf-8',
-        _tb_token_:opts._tb_token_||'6279k4rLGtn',
+        _tb_token_:opts._tb_token_||'BXGkW2fdtn',
         adzoneid:opts.adzoneid||23818860,           //推广位名称 贴纸
         auctionid:opts.auctionid||38349612018,      //产品id
         groupid:opts.groupid||1375950175666,        //群组id
@@ -83,7 +83,7 @@ alimama.getUnionList=function(opts){
     opts.url=opts.url||'http://pub.alimama.com/report/getTbkPaymentDetails.json?';
     querys={
         _input_charset:opts._input_charset||'utf-8',
-        _tb_token_:opts._tb_token_||'6279k4rLGtn',
+        _tb_token_:opts._tb_token_||'BXGkW2fdtn',
         startTime:opts.startTime||'2014-11-19',             //开始时间
         endTime:opts.endTime||'2014-11-25',                 //结束时间
         payStatus:opts.payStatus||'',                       //订单状态
