@@ -12,6 +12,11 @@ router.get('/t9.html', function (req, res) {
     res.render('t9');
 });
 
+//获取列表页面
+router.get('/admin.html', function (req, res) {
+    res.render('admin/index');
+});
+
 //获取详细信息页面
 router.get('/buy.html', function (req, res) {
     var id=req.query.id;
@@ -29,6 +34,11 @@ router.get('/buy.html', function (req, res) {
             res.send(result.error(err));
         }
     });
+});
+
+//登录
+router.get('/alimamaLogin.html', function (req, res) {
+    res.redirect('https://login.taobao.com/member/login.jhtml?style=minisimple&from=alimama');
 });
 
 //编辑页面源代码

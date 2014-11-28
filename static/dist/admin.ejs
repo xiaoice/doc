@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include top %>
+    <title>后台</title>
+    <script type="application/javascript" src="js/modules/index.js"></script>
+</head>
+<body class="body-layer t9-layer">
+<% include head %>
+<bodyer>
+    <input id="input_nav" type="hidden" value="doc"/>
+    <div class="body-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <ul class="list-group">
+                        <li class="list-group-item">批量采集数据</li>
+                        <li class="list-group-item">分组采集</li>
+                        <li class="list-group-item">搜索采集</li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#">批量采集数据</a></li>
+                        <li role="presentation"><a href="#">分组采集</a></li>
+                        <li role="presentation"><a href="#">搜索采集</a></li>
+                    </ul>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</bodyer>
+</body>
+</html>
+<script>
+    lib.use(['modules/module']);
+
+    lib.use('jquery',function($){
+
+
+    });
+</script>

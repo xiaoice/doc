@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>后台</title>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <script type="application/javascript" src="/js/jquery.js"></script>
+    <script type="application/javascript" src="/plugin/jquery-easyui/jquery.easyui.min.js"></script>
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/black/easyui.css" />
+    <link charset="utf-8" rel="stylesheet" href="http://sqler.sturgeon.mopaas.com/js/plugins/sql/css/sql.css" />
+</head>
+<body class="easyui-layout">
+    <div region="north" border="false" class="menu_tool" style="height:28px;">
+        <a id="menu_top_file" class="easyui-menubutton">文件</a>
+        <a id="menu_top_tool" class="easyui-menubutton">工具</a>
+        <a id="menu_top_help" class="easyui-menubutton">帮助</a>
+    </div>
+    <div region="west" split="true" style="width:220px;padding:10px;">west content</div>
+    <div region="south" style="height:32px;padding:6px;">south region</div>
+    <div region="center">
+        <div class="easyui-tabs" border="false">
+            <div title="About" style="padding:10px">
+                <table id="dg" title="My Users"
+                       toolbar="#toolbar" pagination="true" idField="id"
+                       rownumbers="true" fitColumns="true" singleSelect="true">
+                    <thead>
+                    <tr>
+                        <th field="title" width="200">标题</th>
+                        <th field="reservePrice" width="50">Last Name</th>
+                        <th field="zkPrice" width="50">Phone</th>
+                        <th field="zkRate" width="50">Email</th>
+                        <th field="zkType" width="50">Email</th>
+                        <th field="calCommission" width="50">Email</th>
+                        <th field="commissionRatePercent" width="50">Email</th>
+                        <th field="totalNum" width="50">Email</th>
+                        <th field="totalFee" width="50">Email</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div title="My Documents" style="padding:10px">
+                dddd
+            </div>
+            <div title="Help" data-options="iconCls:'icon-help',closable:true" style="padding:10px">
+                This is the help content.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    $(function(){
+        $('#dg').datagrid({
+            method:"get"
+            ,url: 'findListByPage.do'
+        });
+    });
+</script>

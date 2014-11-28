@@ -22,8 +22,8 @@ a:hover{text-decoration: none;}
 .header-navbar{float: right;width: 50%;}
 .header-navbar .navbar-item{float: left;width: 20%;text-align: center;display: block;height: 100%;padding: 26px 0;color: #999;font-size: 16px;}
 .header-navbar .navbar-item:hover,.header-navbar .active{color: #333;text-decoration: none;}
-.panel-title{text-align: center;font-size: 36px;font-weight: bold;padding: 70px 0 80px 0;}
-.panel-content{border: 1px solid #ddd;border-radius: 4px;margin-bottom: 20px;padding: 20px 20px 10px 20px;font-size: 22px;}
+.body-panel-title{text-align: center;font-size: 36px;font-weight: bold;padding: 70px 0 80px 0;}
+.body-panel-content{border: 1px solid #ddd;border-radius: 4px;margin-bottom: 20px;padding: 20px 20px 10px 20px;font-size: 22px;}
 .list-group-item .item{margin-right: 5px;}
 .body-render{margin-top: 0px;}
 

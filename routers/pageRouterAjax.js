@@ -2,8 +2,7 @@ var express = require('express'),
     router = express.Router(),
     fs=require("fs"),
     util = require('../util/util'),
-    productDao = require('../dao/productDao'),
-    productVo = require('../vo/productVo'),
+    productAction = require('../controller/productAction');
     alimama = require('../controller/alimama'),
     result=util.result;
 
@@ -19,67 +18,49 @@ router.get('/loginOut.do', function (req, res) {
 
 //添加
 router.get('/add.do', function (req, res) {
-    //需要的字段名称
-    var fields="reservePrice,zkPrice,zkRate,zkType,calCommission,commissionRatePercent,userId,userType,userNumberId,nick,title,shopUrl,auctionUrl,pictUrl,groupIds,groupId,groupRate,groupCommission,totalNum,totalFee,auctionId,auctionType,auctionTag".split(',')
-        ,pagelist,pageIndex,pageLength,pageVo,value
-        ,vo
-        , i, j,field,resultOks=[],resultErrors=[],voClick
-        ,done=function(resultErrors,resultOks){
-            res.send(result.ok({resultErrors:resultErrors,resultOks:resultOks}));
-        };
-    alimama.getList({
-        success:function(result,status,headers){
-            if(result){
-                pagelist=JSON.parse(result).data.pagelist,pageLength=pagelist.length;
-                for(pageIndex= 0;pageIndex<pageLength;pageIndex++){
-                    pageVo=pagelist[pageIndex];
-                    vo=productVo.getVo();
-                    vo.id=null;
-                    for(i=0,j=fields.length;i<j;i++){
-                        field=fields[i],value=pageVo[field];
-                        if(typeof value!=="undefined"){
-                            vo[field]=value;
-                        }
-                    }
-                    (function(vo){
-                        alimama.getLink({
-                            auctionid:vo.auctionId,
-                            groupid:vo.groupId,
-                            success:function(data){
-                                if(data){
-                                    voClick=JSON.parse(data).data;
-                                    vo.clickUrl=voClick.clickUrl;
-                                    vo.eliteUrl=voClick.eliteUrl;
-                                    productDao.insert(vo, function (err, results) {
-                                        if (err) {
-                                            resultErrors.push(vo);
-                                        } else {
-                                            resultOks.push(vo);
-                                        }
-                                        if ((resultErrors.length + resultOks.length) === pageLength) {
-                                            done(resultErrors, resultOks);
-                                        }
-                                    });
-                                }
-                            }
-                        });
-                    })(vo);
-                }
-            }else{
-                res.redirect('/alimamaLogin.html');
-            }
-        },
-        error:function(err){
-            res.send(result.error(err));
+    productAction.insertList(function(err,data){
+        if(err){
+            res.redirect('/alimamaLogin.html');
+        }else{
+            res.send(result.ok(data));
         }
     });
 });
 
-
-//登录
-router.get('/alimamaLogin.html', function (req, res) {
-    res.redirect('https://login.taobao.com/member/login.jhtml?style=minisimple&from=alimama');
+//获取分页列表
+router.get('/findListByPage.do', function (req, res) {
+    productAction.findListByPage({
+        pageIndex:req.query.page||1
+        ,pageSize:req.query.rows||10
+    }
+    ,function(err,data){
+        res.send({total:data.total,rows:data.data});
+    });
 });
+
+//更新
+router.get('/updateById.do', function (req, res) {
+    var id=req.query.id;
+    productAction.updateById(id,function(err,data){
+        res.send(result.ok(data));
+    });
+});
+
+//根据id获取数据
+router.get('/findById.do', function (req, res) {
+    var id=req.query.id;
+    productAction.findById(id,function(err,data){
+        res.send(result.ok(data));
+    });
+});
+
+//删除
+router.get('/deleteById.do', function (req, res) {
+    productAction.deleteById(function(err,data){
+        res.send(result.ok(data));
+    });
+});
+
 
 //获取接口集合
 router.get(/\/(getGroupList|getList|getLink|getUnionList).do/, function (req, res) {
