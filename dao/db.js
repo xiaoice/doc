@@ -2,7 +2,7 @@
  * 数据库模块
  */
 
-var log = require('./log');
+var log = require('../util/log');
 var config = require("./config");
 var mysql = require('mysql');
 
@@ -40,39 +40,38 @@ exports.execQuery = function(options) {
 		}
 
 		/*
-		 * connection.query('USE ' + config.db, function(error, results) { if(error) { log.error('DB-选择数据库异常！'); connection.end(); throw error; } });
+		 * connection.query('USE ' + config.db, function(error, dbResult) { if(error) { log.error('DB-选择数据库异常！'); connection.end(); throw error; } });
 		 */
 
 		// 查询参数
 		var sql = options['sql'];
 		var args = options['args'];
-		var handler = options['handler'];
+		var callback = options['callback'];
 
 		// 执行查询
 		if(!args) {
-			var query = connection.query(sql, function(error, results) {
+			var query = connection.query(sql, function(error, dbResult) {
 				if(error) {
 					//log.error('DB-执行查询语句异常！');
 					throw error;
 				}
 
 				// 处理结果
-				handler&&handler(null,results);
+				callback&&callback(null,dbResult);
 			});
 
 			//log.debug(query.sql);
 		} else {
-			var query = connection.query(sql, args, function(error, results) {
+			var query = connection.query(sql, args, function(error, dbResult) {
 				if(error) {
 					//log.error('DB-执行查询语句异常！');
 					//throw error;
 				}
-
 				// 处理结果
-				handler&&handler(error,results);
+				callback&&callback(error,dbResult);
 			});
 
-			//log.debug(query.sql);
+			log.debug(query.sql);
 		}
 
 		// 返回连接池

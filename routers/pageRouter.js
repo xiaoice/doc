@@ -31,6 +31,11 @@ router.get('/buy.html', function (req, res) {
     });
 });
 
+//登录
+router.get('/alimamaLogin.html', function (req, res) {
+    res.redirect('https://login.taobao.com/member/login.jhtml?style=minisimple&from=alimama');
+});
+
 //编辑页面源代码
 router.get('/edit.html', function (req, res) {
     var id=req.query.id,module,title,url;

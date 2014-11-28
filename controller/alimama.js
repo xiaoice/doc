@@ -6,7 +6,7 @@ var alimama={};
 //获取headers
 function gerHeaders(opts){
     opts=opts||{};
-    opts.Cookie=opts.Cookie||"	t=c8617f97cf53c70a3cb3c35df79f48e0; cna=Jir6DPR7rzYCAXeJEKg9SAqu; isg=79628006D376DDEDC1F425D074044EC3; lzstat_uv=7149425371654599793|2650839@2650835@1774292@1774054@2876347; cookie2=474914c59f6386207f49caed9e959e3c; _tb_token_=blLI7WHftn; v=0; cookie32=48e7d7ed68560503fa6fbec4df0962cb; cookie31=NDcyNTc4MzUseGwzNjMyMjcwMDYsMzYzMjI3MDA2QHFxLmNvbSxUQg%3D%3D; alimamapwag=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NDsgcnY6MzMuMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8zMy4w; login=Vq8l%2BKCLz3%2F65A%3D%3D; alimamapw=SFgEAQYEBQFSUw8xCFFQB1IFBwMHVQABDgQBBQlbC1MHAAZVBwVRAwRSUlQ%3D; rurl=aHR0cDovL3d3dy5hbGltYW1hLmNvbS9pbmRleC5odG0%3D";
+    opts.Cookie=opts.Cookie||"t=2c99643d124c20491f6c832d01a0a55b; cna=Lou7DIJD3nUCAbcMQvy5uLHr; isg=F15464A5C8050C858F71E130E29F5E9C; lzstat_uv=29375684571046627047|1774292@1774054@2650839@2650835@633924@2876347; cookie2=3e51e31b45a862f67e113145fa7c4771; _tb_token_=rHwSLe9ktn; v=0; cookie32=48e7d7ed68560503fa6fbec4df0962cb; cookie31=NDcyNTc4MzUseGwzNjMyMjcwMDYsMzYzMjI3MDA2QHFxLmNvbSxUQg%3D%3D; alimamapwag=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXT1c2NDsgcnY6MzMuMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC8zMy4w; login=VFC%2FuZ9ayeYq2g%3D%3D; alimamapw=SFgEAQYEBQFSUw8xCFFQB1IFBwMHVQABDgQBBQlbC1MHAAZVBwVRAwRSUlQ%3D";
     opts.Cookie=opts.Cookie.replace('BXGkW2fdtn',opts._tb_token_||'BXGkW2fdtn');
     return {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",

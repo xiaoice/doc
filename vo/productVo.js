@@ -1,7 +1,5 @@
 
-var product={};
-
-product.getVo=function(){
+module.exports=function(){
     return {
         id:undefined
         ,reservePrice:undefined
@@ -44,6 +42,3 @@ product.getVo=function(){
         ,addTime:undefined
     };
 }
-
-
-module.exports=product;
