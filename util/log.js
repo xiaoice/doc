@@ -10,7 +10,7 @@ var WARN = 3;
 var ERROR = 4;
 var FETAL = 5;
 
-var config = require('./../dao/config.js');
+var config = require('../dao/config-db.js');
 
 exports.time = function(label) {
 	console.time(label);

@@ -3,7 +3,7 @@
  */
 
 var log = require('../util/log');
-var config = require("./config");
+var config = require("./config-db");
 var mysql = require('mysql');
 
 var options = {
