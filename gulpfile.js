@@ -45,7 +45,7 @@ gulp.task('dev-js-lib', function () {
 
 gulp.task('dev-css', function () {
     return gulp.src([
-        'static/src/css/app.css'
+        'static/src/css/*'
     ])
     .pipe(gulp.dest('static/dist/css/'));
 });

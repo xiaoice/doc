@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>后台</title>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <script type="application/javascript" src="/js/jquery.js"></script>
+    <script type="application/javascript" src="/plugin/jquery-easyui/jquery.easyui.min.js"></script>
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/black/easyui.css" />
+    <link charset="utf-8" rel="stylesheet" href="/css/admin.css" />
+</head>
+<body class="easyui-layout">
+    <table id="dg" title="配置列表"
+           toolbar="#toolbar" pagination="true" idField="id"
+           rownumbers="true" fitColumns="true" singleSelect="true">
+        <thead>
+        <tr>
+            <th field="key" width="200">标题</th>
+            <th field="value" width="50">Last Name</th>
+        </tr>
+        </thead>
+    </table>
+</body>
+</html>
+
+<script>
+    $(function(){
+        $('#dg').datagrid({
+            method:"get"
+            ,url: '/admin/config/findList.do'
+        });
+    });
+</script>

@@ -13,10 +13,12 @@ function result(status,msg,data){
 }
 
 var util={
+    //获取随机数
     getRandom:function(length){
         var number=Math.floor(new Date().getTime()*Math.random()*0x10000).toString(16);
         return crypto.createHash('md5').update(number).digest('hex').slice(0, length||10);
     },
+    //结果封装函数
     result:{
         error:function(msg,data){
             if(arguments.length===1&& typeof arguments[0]==="object"){
@@ -33,6 +35,7 @@ var util={
             }
         }
     },
+    //格式化json
     parseJson:function(data){
         return JSON.parse(JSON.stringify(data));
     },
@@ -110,6 +113,14 @@ var util={
         fs.writeFile("./data/config.json",util.formatBeautifyJSON(config),"utf-8",function(err){
             callback&&callback(err,config);
         });
+    },
+    //封装router回调函数
+    routerCallback:function (err,data) {
+        if(err){
+
+        }else{
+            res.send()
+        }
     }
 };
 

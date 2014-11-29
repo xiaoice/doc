@@ -1,7 +1,8 @@
 var db = require("./db");
 
-function baseDao (name){
+function baseDao (name,primary){
     this.name=name;
+    this.primary=primary||"ID";
 }
 
 //insert语句-转换vo字段
@@ -48,7 +49,7 @@ function convertOrderby(orderby){
     if(orderby===null){
         return " ";
     }else if(typeof orderby=="undefined"){
-        return " order by id desc ";
+        return " order by 1 desc ";
     }else{
         return " order by "+orderby+" ";
     }
@@ -126,7 +127,7 @@ baseDao.prototype.insert = function (vo, callback) {
 baseDao.prototype.updateById = function(vo,callback) {
     var that=this,r=convertUpdateFields(vo);
     db.execQuery({
-        "sql": "UPDATE "+that.name+" SET "+r.fields.join(',')+" WHERE id="+vo.id,
+        "sql": "UPDATE "+that.name+" SET "+r.fields.join(',')+" WHERE "+that.primary+"="+vo.id,
         "args": r.values,
         "callback": callback
     });
@@ -139,7 +140,7 @@ baseDao.prototype.updateById = function(vo,callback) {
 baseDao.prototype.findById = function(id, callback) {
     var that=this;
     db.execQuery({
-        "sql": "SELECT * FROM " + that.name + " WHERE id=?",
+        "sql": "SELECT * FROM " + that.name + " WHERE "+that.primary+"=?",
         "args": [parseInt(id)],
         "callback":function(err,results){
             callback&&callback(err,results.length>0?results[0]:{});
@@ -153,7 +154,7 @@ baseDao.prototype.findById = function(id, callback) {
 baseDao.prototype.deleteById = function(id, callback) {
     var that=this;
     db.execQuery({
-        "sql": "DELETE FROM " + that.name + " WHERE id=?",
+        "sql": "DELETE FROM " + that.name + " WHERE "+that.primary+"=?",
         "args": [parseInt(id)],
         "callback": callback
     });

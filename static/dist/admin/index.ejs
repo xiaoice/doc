@@ -6,7 +6,7 @@
     <script type="application/javascript" src="/js/jquery.js"></script>
     <script type="application/javascript" src="/plugin/jquery-easyui/jquery.easyui.min.js"></script>
     <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/black/easyui.css" />
-    <link charset="utf-8" rel="stylesheet" href="http://sqler.sturgeon.mopaas.com/js/plugins/sql/css/sql.css" />
+    <link charset="utf-8" rel="stylesheet" href="/css/admin.css" />
 </head>
 <body class="easyui-layout">
     <div region="north" border="false" class="menu_tool" style="height:28px;">
@@ -38,7 +38,7 @@
                 </table>
             </div>
             <div title="My Documents" style="padding:10px">
-                dddd
+                <iframe class="easy-iframe" src="/admin/config/add.html"></iframe>
             </div>
             <div title="Help" data-options="iconCls:'icon-help',closable:true" style="padding:10px">
                 This is the help content.
@@ -52,7 +52,7 @@
     $(function(){
         $('#dg').datagrid({
             method:"get"
-            ,url: '/admin/findListByPage.do'
+            ,url: '/admin/product/findListByPage.do'
         });
     });
 </script>

@@ -19,6 +19,7 @@ cache.init=function(callback){
                     item=results[i];
                     cache[item.key]=item.value;
                 }
+                cache.list=results;
                 callback&&callback(null,cache);
             }
         }
