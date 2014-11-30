@@ -9,8 +9,8 @@ function baseDao (name,primary){
 function convertInsertFields(vo){
     var i,fields=[],marks=[],values=[];
     for(i in vo){
-        if(typeof vo[i] !="undefined"){
-            fields.push(i);
+        if(typeof vo[i] !="undefined"&& i !=="id"){
+            fields.push("`"+i+"`");
             marks.push('?');
             values.push(vo[i]);
         }
@@ -28,7 +28,7 @@ function convertUpdateFields(vo){
     for(i in vo){
         val=vo[i];
         if(typeof val !="undefined"&& i !=="id"){
-            fields.push(i+"=?");
+            fields.push("`"+i+"`=?");
             values.push(val);
         }
     }
@@ -113,11 +113,16 @@ baseDao.prototype.findListByPage = function(args, callback) {
  */
 baseDao.prototype.insert = function (vo, callback) {
     var that=this,r=convertInsertFields(vo);
-    db.execQuery({
-        "sql": "INSERT INTO "+that.name+"("+r.fields.join(',')+") VALUES("+r.marks.join(',')+")",
-        "args": r.values,
-        "callback": callback
-    });
+    if(!vo.id){
+        db.execQuery({
+            "sql": "INSERT INTO "+that.name+"("+r.fields.join(',')+") VALUES("+r.marks.join(',')+")",
+            "args": r.values,
+            "callback": callback
+        });
+    }else{
+        that.updateById(vo, callback);
+    }
+
 };
 
 
@@ -126,11 +131,17 @@ baseDao.prototype.insert = function (vo, callback) {
  */
 baseDao.prototype.updateById = function(vo,callback) {
     var that=this,r=convertUpdateFields(vo);
-    db.execQuery({
-        "sql": "UPDATE "+that.name+" SET "+r.fields.join(',')+" WHERE "+that.primary+"="+vo.id,
-        "args": r.values,
-        "callback": callback
-    });
+    if(vo.id){
+        db.execQuery({
+            "sql": "UPDATE "+that.name+" SET "+r.fields.join(',')+" WHERE "+that.primary+"="+vo.id,
+            "args": r.values,
+            "callback": callback
+        });
+    }
+    else{
+        that.insert(vo, callback);
+    }
+
 };
 
 
@@ -141,7 +152,7 @@ baseDao.prototype.findById = function(id, callback) {
     var that=this;
     db.execQuery({
         "sql": "SELECT * FROM " + that.name + " WHERE "+that.primary+"=?",
-        "args": [parseInt(id)],
+        "args": parseInt(id),
         "callback":function(err,results){
             callback&&callback(err,results.length>0?results[0]:{});
         }
@@ -155,7 +166,7 @@ baseDao.prototype.deleteById = function(id, callback) {
     var that=this;
     db.execQuery({
         "sql": "DELETE FROM " + that.name + " WHERE "+that.primary+"=?",
-        "args": [parseInt(id)],
+        "args": parseInt(id),
         "callback": callback
     });
 };
@@ -165,6 +176,7 @@ baseDao.prototype.deleteById = function(id, callback) {
  */
 baseDao.prototype.findAll = function(args,callback) {
     var that=this;
+    args=args||{};
     db.execQuery({
         "sql": "SELECT * FROM " + that.name +convertWhere(args.wheres)+convertOrderby(args.orderby),
         "callback": callback
@@ -188,11 +200,23 @@ baseDao.prototype.getTotal = function(args, callback) {
 /**
  * DAO: excute
  */
-baseDao.prototype.excute = function(sql, callback) {
+baseDao.prototype.excute = function(args, callback) {
     db.execQuery({
-        "sql": sql,
+        "sql": args.sql,
+        "args": args.params,
         "callback": callback
     });
 };
+
+baseDao.prototype.extend=function(){
+    var obj={};
+    for(var i in this){
+        obj[i]=this[i];
+    }
+    for(var i in this.__proto__){
+        obj[i]=this.__proto__[i];
+    }
+    return obj;
+}
 
 module.exports=baseDao;

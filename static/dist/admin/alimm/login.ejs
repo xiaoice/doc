@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>后台</title>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <script type="application/javascript" src="/js/jquery.js"></script>
+    <script type="application/javascript" src="/plugin/jquery-easyui/jquery.easyui.min.js"></script>
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/black/easyui.css" />
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/icon.css" />
+    <link charset="utf-8" rel="stylesheet" href="/css/admin.css" />
+</head>
+<body class="easyui-layout">
+    <div class="easyui-panel pd10">
+        <% if (status) { %>
+        <div>你已经登录成功了</div>
+        <% } else { %>
+        <div><a href="/admin/alimamaLogin.html" target="_blank">登录阿里妈妈</a></div>
+        <% } %>
+        <textarea id="input_cookie" class="easyui-textarea" style="width:100%;height: 100px;"><%=cookie%></textarea>
+        <a id="bt_save" class="easyui-linkbutton">保存</a>
+    </div>
+</body>
+</html>
+
+<script>
+    $("#bt_save").click(function(){
+        var cookie, tokens,token=null;
+        cookie=$("#input_cookie").val();
+        if(cookie==""){
+            return alert("请输入cookie");
+        }
+        tokens=cookie.match(/tb_token_=(\S*);/ig);
+        if(tokens){
+            token=cookie.match(/tb_token_=(\S*);/ig)[0];
+        }
+        if(token==""){
+            return alert("cookie不正确");
+        }
+        $.post("/admin/alimm/loginTest.do",{
+            token:token.replace(";","").replace("tb_token_=",""),
+            cookie:cookie
+        },function(data){
+           alert("登录成功");
+        });
+    });
+</script>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>后台</title>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <script type="application/javascript" src="/js/jquery.js"></script>
+    <script type="application/javascript" src="/plugin/jquery-easyui/jquery.easyui.min.js"></script>
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/black/easyui.css" />
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/icon.css" />
+    <link charset="utf-8" rel="stylesheet" href="/css/admin.css" />
+</head>
+<body class="easyui-layout">
+    <span id="datagrid"></span>
+
+    <!-- 菜单-文件 -创建新连接按钮 -->
+    <div id="dialog_config" class="easyui-window" title="编辑配置"
+        data-options="iconCls:'icon-new',closed:true,collapsible:false,
+        maximizable:false,minimizable:false,resizable:false" >
+        <table class="edit_table">
+            <tr>
+                <td class="tdLabel">键:</td>
+                <td><input id="input_key" class="easyui-validatebox" type="text"></input></td>
+            </tr>
+            <tr>
+                <td class="tdLabel">值:</td>
+                <td><input id="input_value" class="easyui-validatebox" type="text"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-right">
+                    <a id="bt_save" class="easyui-linkbutton">保存</a>
+                    <a id="bt_cancel" class="easyui-linkbutton">取消</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+<script>
+    lib.use('admin-config');
+</script>
