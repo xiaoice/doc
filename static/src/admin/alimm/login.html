@@ -17,6 +17,8 @@
         <div><a href="/admin/alimamaLogin.html" target="_blank">登录阿里妈妈</a></div>
         <% } %>
         <textarea id="input_cookie" class="easyui-textarea" style="width:100%;height: 100px;"><%=cookie%></textarea>
+        <div>spm：<input id="input_spm" value="<%=spm%>" style="width:300px;margin: 10px;"/></div>
+        <div>_tb_token_：<%=token%></div>
         <a id="bt_save" class="easyui-linkbutton">保存</a>
     </div>
 </body>
@@ -24,8 +26,9 @@
 
 <script>
     $("#bt_save").click(function(){
-        var cookie, tokens,token=null;
+        var cookie,spm, tokens,token=null;
         cookie=$.trim($("#input_cookie").val());
+        spm=$.trim($("#input_spm").val());
         if(cookie==""){
             return alert("请输入cookie");
         }
@@ -38,7 +41,8 @@
         }
         $.post("/admin/alimm/loginTest.do",{
             token:token.replace(";","").replace("tb_token_=",""),
-            cookie:cookie
+            cookie:cookie,
+            spm:spm
         },function(result){
             if(result.status){
                 alert("登录成功");

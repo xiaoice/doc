@@ -50,11 +50,12 @@ alimama.getList=function(opts){
     opts.querys={
         _input_charset:opts._input_charset||'utf-8',
         _tb_token_:cache.get("_tb_token_"),
-        groupId:opts.adzoneid||1375950175666,                   //群组id
-        sort:opts.auctionid||'',                                //排序
-        toPage:opts.toPage||1,                                  //第几页
-        perPagesize:opts.perPagesize||40,                       //每页显示多少条
-        spm:opts.siteid||'a2320.7388781.a214tr8.d006.aIIZue',
+        groupId:opts.groupId,                   //群组id
+        sort:opts.sort||'',                     //排序
+        q:opts.q||'',                           //关键字
+        toPage:opts.toPage||1,                  //第几页
+        perPagesize:opts.perPagesize||40,       //每页显示多少条
+        spm:cache.get("spm"),
         t:new Date().getTime()
     };
     get(opts);
@@ -107,7 +108,7 @@ alimama.login=function(opts){
 
 //登录
 alimama.loginTest=function(callback){
-    nodegrass.get('http://pub.alimama.com/report/getTbkPaymentDetails.json',function(data,status,headers){
+    nodegrass.get('http://pub.alimama.com/group/getGroupInfoList.json',function(data,status,headers){
         callback&&callback(data,status,headers);
     },gerHeaders(),'gbk');
 };
