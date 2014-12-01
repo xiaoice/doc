@@ -12,7 +12,7 @@
 <body class="easyui-layout">
     <div class="easyui-panel pd10">
         <% if (status) { %>
-        <div>你已经登录成功了</div>
+        <div><a href="http://pub.alimama.com/myunion.htm?spm=a2320.7388781.a214tr8.d006.4j4fBX#!/report/detail/taoke" target="_blank">你已经登录成功了</a></div>
         <% } else { %>
         <div><a href="/admin/alimamaLogin.html" target="_blank">登录阿里妈妈</a></div>
         <% } %>
@@ -25,7 +25,7 @@
 <script>
     $("#bt_save").click(function(){
         var cookie, tokens,token=null;
-        cookie=$("#input_cookie").val();
+        cookie=$.trim($("#input_cookie").val());
         if(cookie==""){
             return alert("请输入cookie");
         }
@@ -39,8 +39,12 @@
         $.post("/admin/alimm/loginTest.do",{
             token:token.replace(";","").replace("tb_token_=",""),
             cookie:cookie
-        },function(data){
-           alert("登录成功");
+        },function(result){
+            if(result.status){
+                alert("登录成功");
+            }else{
+                alert("登录失败");
+            }
         });
     });
 </script>

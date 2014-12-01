@@ -12,13 +12,13 @@
 <body class="easyui-layout">
     <div region="north" border="false" class="menu_tool">
         <div class="easyui-tabs admin-menu-tabs" border="false">
-            <div title="阿里妈妈">
+            <div title="阿里">
                 <div class="admin-menu-box">
-                    <a class="admin-menu-item" data-href="/admin/alimm/login.html">登录阿里妈妈</a>
-                    <a class="admin-menu-item" data-href="/admin/alimm/jiukuaijiu.html">九块九</a>
+                    <a class="admin-menu-item" data-href="/admin/alimm/login.html">登录</a>
+                    <a class="admin-menu-item" data-href="/admin/alimm/jiukuaijiu.html">群组</a>
                 </div>
             </div>
-            <div title="商品管理" data-options="closable:true">
+            <div title="产品" data-options="closable:true">
                 <div class="admin-menu-box">
                     <a class="admin-menu-item" data-href="/admin/config/index.html">添加配置表</a>
                 </div>
@@ -34,7 +34,7 @@
     <div region="center">
         <div class="easyui-tabs admin-page-tabs" border="false">
             <div title="About" style="padding:10px">
-                <table id="dg" title="My Users"
+                <table id="datagrid" title="My Users"
                        toolbar="#toolbar" pagination="true" idField="id"
                        rownumbers="true" fitColumns="true" singleSelect="true">
                     <thead>
@@ -59,7 +59,7 @@
 
 <script>
     $(function(){
-        $('#dg').datagrid({
+        $('#datagrid').datagrid({
             method:"get"
             ,url: '/admin/product/findListByPage.do'
         });
@@ -74,7 +74,7 @@
                     tools:[{
                         iconCls:'icon-mini-refresh',
                         handler:function(){
-                            alert('refresh');
+                            $("iframe[src='"+href+"']").attr("src",href);
                         }
                     }]
                 });

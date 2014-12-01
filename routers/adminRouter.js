@@ -8,7 +8,7 @@ router.get('/t9.html', function (req, res) {
 });
 
 //获取列表页面
-router.get('/index.html', function (req, res) {
+router.get('/', function (req, res) {
     res.render('admin/index');
 });
 

@@ -33,7 +33,7 @@ cache.set = function(key, obj) {
     cache[key] = obj;
 };
 cache.exist = function(key) {
-    return cache[key] != undefined;
+    return typeof cache[key] != "undefined";
 };
 cache.delete = function(key) {
     delete cache[key];

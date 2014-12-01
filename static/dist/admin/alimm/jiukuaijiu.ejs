@@ -5,40 +5,103 @@
     <script type="application/javascript" src="/js/lib.js"></script>
     <script type="application/javascript" src="/js/jquery.js"></script>
     <script type="application/javascript" src="/plugin/jquery-easyui/jquery.easyui.min.js"></script>
+    <script type="application/javascript" src="/plugin/jquery-easyui/datagrid-detailview.js"></script>
     <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/black/easyui.css" />
     <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/icon.css" />
     <link charset="utf-8" rel="stylesheet" href="/css/admin.css" />
 </head>
 <body style="margin: 0;">
-    <table id="dg"
-           toolbar="#toolbar" pagination="true" idField="id"
+
+    <table id="datagrid" toolbar="#toolbar" pagination="true" idField="id"
            rownumbers="true" fitColumns="true" singleSelect="true">
         <thead>
         <tr>
             <th field="title" width="200">标题</th>
-            <th field="reservePrice" width="50">Last Name</th>
-            <th field="zkPrice" width="50">Phone</th>
-            <th field="zkRate" width="50">Email</th>
-            <th field="zkType" width="50">Email</th>
-            <th field="calCommission" width="50">Email</th>
-            <th field="commissionRatePercent" width="50">Email</th>
-            <th field="totalNum" width="50">Email</th>
-            <th field="totalFee" width="50">Email</th>
+            <th field="reservePrice" width="50">原始价格</th>
+            <th field="zkPrice" width="50">销售价格</th>
+            <th field="zkRate" width="50">折扣</th>
+            <th field="zkType" width="50">折扣类型</th>
+            <th field="userType" width="50">来源</th>
+            <th field="calCommission" width="50">佣金</th>
+            <th field="commissionRatePercent" width="50">佣金比例</th>
+            <th field="groupCommission" width="50">群内部佣金</th>
+            <th field="groupRate" width="50">群内部佣金比例</th>
+            <th field="totalNum" width="50">总推广数</th>
+            <th field="totalFee" width="50">总推广金额</th>
         </tr>
         </thead>
     </table>
+
+    <div id="toolbar" style="padding:2px 5px;">
+        群组:
+        <select id="select_groupId" class="easyui-combobox" panelHeight="auto" style="width:100px">
+            <option value="">请选择</option>
+            <% for(var i=0; i<group.length; i++) {%>
+            <option value="<%= group[i].groupId %>"><%= group[i].name %></option>
+            <% } %>
+        </select>
+
+        排序:
+        <select id="select_sort" class="easyui-combobox" panelHeight="auto" style="width:100px">
+            <option value="">请选择</option>
+            <option value="bid">单价从低到高</option>
+            <option value="_bid">单价从高到低</option>
+            <option value="totalfee">销量从低到高</option>
+            <option value="_totalfee">销量从高到低</option>
+            <option value="totalnum">佣金从低到高</option>
+            <option value="_totalnum">佣金从高到低</option>
+        </select>
+        <a id="bt_search" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
+    </div>
 </body>
 </html>
 
 <script>
     $(function(){
-        $('#dg').datagrid({
+        var $datagrid=$('#datagrid'),$document=$(document);
+        $datagrid.datagrid({
             method:"get"
-            ,loadFilter:function(data){
-                console.log(data.data.pagelist);
-                return {rows:data.data.pagelist};
+            ,url: '/admin/alimm/findListByPage.do'
+            ,loadMsg:"正在加载，请稍后。。。"
+            ,height:$document.height()
+            ,queryParams:{
+                "groupId":$('#select_groupId').combobox('getValue'),
+                "sort":$('#select_sort').combobox('getValue')
             }
-            ,url: '/admin/alimm/getList.do'
+            //,pagePosition:"both"
+            ,pageSize:40
+            ,pageList:[40]
+            ,pagination:true
+            ,loadFilter:function(result){
+                var data=[],total=0;
+                if(result&&result.data){
+                    data=result.data.pagelist||[];
+                    if(result.data.paginator){
+                        total=result.data.paginator.items;
+                    }
+                }
+                return {rows:data,total:total};
+            },
+            onLoadSuccess: function(result){
+                var layout=['first','prev','sep',"links",'sep','next','last','sep','refresh','sep','manual'];
+                var displayMsg="当前第[{from}-{to}]条 共[{total}]条";
+                $datagrid.datagrid('getPager').pagination({
+                    layout:layout,
+                    displayMsg:displayMsg
+                });
+            },
+            view: detailview,
+            detailFormatter:function(index,row){
+                return '<div class="ddv" style="padding:5px 0">dsdddddddddddd</div>';
+            },
+            onExpandRow: function(index,row){
+                var ddv = $(this).datagrid('getRowDetail',index).find('div.ddv');
+                $datagrid.datagrid('fixDetailRowHeight',index);
+            }
+        });
+
+        $document.on("click","#bt_search",function(){
+            $datagrid.datagrid("reload");
         });
     });
 </script>

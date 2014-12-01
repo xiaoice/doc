@@ -51,8 +51,9 @@ alimama.getList=function(opts){
         _input_charset:opts._input_charset||'utf-8',
         _tb_token_:cache.get("_tb_token_"),
         groupId:opts.adzoneid||1375950175666,                   //群组id
-        sort:opts.auctionid||'_totalnum',                       //排序
-        toPage:opts.groupid||1,                                 //第几页
+        sort:opts.auctionid||'',                                //排序
+        toPage:opts.toPage||1,                                  //第几页
+        perPagesize:opts.perPagesize||40,                       //每页显示多少条
         spm:opts.siteid||'a2320.7388781.a214tr8.d006.aIIZue',
         t:new Date().getTime()
     };
