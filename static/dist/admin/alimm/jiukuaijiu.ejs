@@ -33,14 +33,18 @@
     </table>
 
     <div id="toolbar" style="padding:2px 5px;">
-        群组:
+        <label class="admin-alimm-tool-label">后台分析链接:</label>
+        <label class="checkbox-label">
+            <input id="input_linkable" value="true" class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
+        </label>
+        <label class="admin-alimm-tool-label">群组:</label>
         <select id="select_groupId" class="easyui-combobox" panelHeight="auto" style="width:100px">
             <% for(var i=0; i<group.length; i++) {%>
             <option value="<%= group[i].groupId %>"><%= group[i].name %></option>
             <% } %>
         </select>
 
-        排序:
+        <label class="admin-alimm-tool-label">排序:</label>
         <select id="select_sort" class="easyui-combobox" panelHeight="auto" style="width:100px">
             <option value="">请选择</option>
             <option value="bid">单价从低到高↑</option>
@@ -50,17 +54,105 @@
             <option value="totalfee">佣金从低到高↑</option>
             <option value="_totalfee">佣金从高到低↓</option>
         </select>
-        关键字：<input id="input_q" class="textbox-text" type="text"/>
+        <label class="admin-alimm-tool-label">关键字：</label>
+        <input id="input_q" class="admin-alimm-tool-text" type="text"/>
         <a id="bt_search" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
     </div>
 
-    <div id="df" style="display: none;">
-        <table width="100%">
+    <!-- 添加商品模版 -->
+    <div id="datagrid-tpl-insert" class="hidden">
+        <table class="admin-alimm-table admin-alimm-table1">
             <tr>
-                <td>爱淘宝链接:</td>
-                <td><input /></td>
-                <td>爱淘宝链接:</td>
-                <td><input /></td>
+                <td class="admin-alimm-table-pictd">
+                    <img class="admin-alimm-table-pic" src="http://img04.taobaocdn.com/bao/uploaded/i4/TB1P4TrGFXXXXbpXFXXXXXXXXXX_!!0-item_pic.jpg"/>
+                </td>
+                <td>
+                    <table class="admin-alimm-table admin-alimm-table2">
+                        <thead>
+                        <tr class="hidden">
+                            <th width="25%"></th>
+                            <th width="25%"></th>
+                            <th width="25%"></th>
+                            <th width="25%"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="2" class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">链接：</label>
+                                <input class="admin-alimm-table-text" type="text"/>
+                            </td>
+                            <td colspan="2" class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">链接：</label>
+                                <input class="admin-alimm-table-text" type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">sells：</label>
+                                <input class="admin-alimm-table-text" type="text"/>
+                            </td>
+                            <td class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">likes：</label>
+                                <input class="admin-alimm-table-text" type="text"/>
+                            </td>
+                            <td class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">inventory：</label>
+                                <input class="admin-alimm-table-text" type="text"/>
+                            </td>
+                            <td class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">hits：</label>
+                                <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">pass：</label>
+                                <label class="checkbox-label">
+                                    <input class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
+                                </label>
+                            </td>
+                            <td class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">isShow：</label>
+                                <label class="checkbox-label">
+                                    <input class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
+                                </label>
+                            </td>
+                            <td colspan="2" class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">status：</label>
+                                <select id="select_status" class="admin-alimm-table-select">
+                                    <option value="">请选择</option>
+                                    <option value="0">即将开始</option>
+                                    <option value="1">正在热卖</option>
+                                    <option value="2">已经结束</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">pass：</label>
+                                <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                            </td>
+                            <td colspan="2" class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">isShow：</label>
+                                <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="admin-alimm-table-td">
+                                <label class="admin-alimm-table-label">status：</label>
+                                <textarea class="admin-alimm-table-textarea"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="admin-alimm-table-td">
+                                <button class="button">保存</button>
+                                <button class="button">取消</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
             </tr>
         </table>
     </div>
@@ -112,7 +204,8 @@
             ,height:$document.height()
             ,queryParams:{
                 "groupId":$('#select_groupId').combobox('getValue'),
-                "sort":$('#select_sort').combobox('getValue')
+                "sort":$('#select_sort').combobox('getValue'),
+                linkable:$("#input_linkable:checked").val()
             }
             //,pagePosition:"both"
             ,pageSize:40
@@ -136,11 +229,13 @@
             ]]
             ,loadFilter:function(result){
                 var data=[],total=0;
-                if(result&&result.data){
-                    data=result.data.pagelist||[];
-                    if(result.data.paginator){
-                        total=result.data.paginator.items;
+                if(result&&result.status){
+                    if(result.data){
+                        data=result.data.rows;
+                        total=result.data.total;
                     }
+                }else{
+                    alert(result.msg);
                 }
                 return {rows:data,total:total};
             },
@@ -154,10 +249,11 @@
             },
             view: detailview,
             detailFormatter:function(index,row){
-                return $("#df").html();
+                return $("#datagrid-tpl-insert").html();
             },
             onExpandRow: function(index,row){
-                var ddv = $(this).datagrid('getRowDetail',index).find('div.ddv');
+                console.log(row);
+                var $table = $(this).datagrid('getRowDetail',index).find('.admin-alimm-table1');
                 $datagrid.datagrid('fixDetailRowHeight',index);
             },
             onRowContextMenu:function(e,index,row){
@@ -171,17 +267,20 @@
         $document.on("click","#bt_search",function(){
             var groupId=$('#select_groupId').combobox('getValue')
                 ,sort=$('#select_sort').combobox('getValue')
-                ,q=$('#input_q').val();
+                ,q=$('#input_q').val()
+                ,linkable=$("#input_linkable:checked").val();
             if(!groupId){
                 return alert("请选择群组");
             }
             $datagrid.datagrid("reload",{
-                "groupId":groupId,
-                "sort":sort,
-                "q":q
+                groupId:groupId,
+                sort:sort,
+                q:q,
+                linkable:linkable
             });
         });
 
+        //鼠标悬浮放大图片
         $document.on("mouseenter",".admin-alimm-picUrl",function(){
             var $this=$(this),url=$(this).attr("src"),left=$this.offset().left,top=$this.offset().top;
             $("#admin-alimm-picBox").remove();
@@ -192,6 +291,7 @@
             $("#admin-alimm-picBox").remove();
         });
 
+        //模糊搜索 输入回车直接搜索
         $document.on("keyup","#input_q",function(e){
             if(e.keyCode===13){
                 $("#bt_search").trigger("click");

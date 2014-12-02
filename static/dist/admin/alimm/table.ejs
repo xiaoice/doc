@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>table</title>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <script type="application/javascript" src="/js/jquery.js"></script>
+    <script type="application/javascript" src="/plugin/jquery-easyui/jquery.easyui.min.js"></script>
+    <script type="application/javascript" src="/plugin/jquery-easyui/datagrid-detailview.js"></script>
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/black/easyui.css" />
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/icon.css" />
+    <link charset="utf-8" rel="stylesheet" href="/css/admin.css" />
+</head>
+<body>
+<div style="text-align: center; padding: 5px 10px; background-color: #fbf9d5; border: 1px solid #A03B3B; font-size: 12px;margin: 1px;">
+    <a target="_blank" href="https://www.delibao.com/systemNoticeDetail-343-1.html" style="color: #a03b3b;text-decoration: none;">【重要】得利宝平台系统升级公告</a>
+    <div style="float: right; color:#000;cursor: pointer;" onclick="$(this).parent().remove()">关闭</div>
+</div>
+
+<table class="admin-alimm-table admin-alimm-table1">
+    <tr>
+        <td class="admin-alimm-table-pictd">
+            <img class="admin-alimm-table-pic" src="http://img04.taobaocdn.com/bao/uploaded/i4/TB1P4TrGFXXXXbpXFXXXXXXXXXX_!!0-item_pic.jpg"/>
+        </td>
+        <td>
+            <table class="admin-alimm-table admin-alimm-table2">
+                <thead>
+                    <tr class="hidden">
+                        <th width="25%"></th>
+                        <th width="25%"></th>
+                        <th width="25%"></th>
+                        <th width="25%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">链接：</label>
+                            <input class="admin-alimm-table-text" type="text"/>
+                        </td>
+                        <td colspan="2" class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">链接：</label>
+                            <input class="admin-alimm-table-text" type="text"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">sells：</label>
+                            <input class="admin-alimm-table-text" type="text"/>
+                        </td>
+                        <td class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">likes：</label>
+                            <input class="admin-alimm-table-text" type="text"/>
+                        </td>
+                        <td class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">inventory：</label>
+                            <input class="admin-alimm-table-text" type="text"/>
+                        </td>
+                        <td class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">hits：</label>
+                            <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">pass：</label>
+                            <label class="checkbox-label">
+                                <input class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
+                            </label>
+                        </td>
+                        <td class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">isShow：</label>
+                            <label class="checkbox-label">
+                                <input class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
+                            </label>
+                        </td>
+                        <td colspan="2" class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">status：</label>
+                            <select id="select_status" class="admin-alimm-table-select">
+                                <option value="">请选择</option>
+                                <option value="0">即将开始</option>
+                                <option value="1">正在热卖</option>
+                                <option value="2">已经结束</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">pass：</label>
+                            <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                        </td>
+                        <td colspan="2" class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">isShow：</label>
+                            <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="admin-alimm-table-td">
+                            <label class="admin-alimm-table-label">status：</label>
+                            <textarea class="admin-alimm-table-textarea"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="admin-alimm-table-td">
+                            <button class="button">保存</button>
+                            <button class="button"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

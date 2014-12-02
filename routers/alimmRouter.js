@@ -13,7 +13,6 @@ router.get("/login.html", function (req, res) {
             opts.token=cache.get("_tb_token_")||"";
             opts.spm=cache.get("spm")||"";
         }
-        console.log(opts);
         res.render("admin/alimm/login",opts);
     });
 
@@ -79,13 +78,56 @@ router.post("/loginTest.do", function (req, res) {
 
 //获取接口集合
 router.get("/findListByPage.do", function (req, res) {
+    var dataObj, i, j,linkVo,resultList=[],totle;
     alimama.getList({
         groupId:req.query.groupId||"",
         sort:req.query.sort||"",
         q:req.query.q||"",
         toPage:req.query.page,
         perPagesize:req.query.rows,
-        success:function(data,status,headers){
+        success:function(data){
+            if(data){
+                dataObj=JSON.parse(data).data;
+                totle=dataObj.paginator.items;
+                if(req.query.linkable){
+                    for(i=0,j=dataObj.pagelist.length;i<j;i++){
+                        (function(vo,length){
+                            alimama.getLink({
+                                groupId:vo.groupId||"",
+                                auctionid:vo.auctionId||"",
+                                success:function(linkData){
+                                    if(linkData){
+                                        linkVo=JSON.parse(linkData).data;
+                                        vo.clickUrl=linkVo.clickUrl;
+                                        vo.eliteUrl=linkVo.eliteUrl;
+                                        resultList.push(vo);
+                                        if(resultList.length===length){
+                                            res.send(result.ok({rows:resultList,total:totle}));
+                                        }
+                                    }
+                                }
+                            });
+                        })(dataObj.pagelist[i],j);
+                    }
+                }else{
+                    res.send(result.ok({rows:dataObj.pagelist,total:totle}));
+                }
+            }else{
+                res.send(result.error("请登录"));
+            }
+        },
+        error:function(err){
+            res.send(result.error("网络异常"));
+        }
+    });
+});
+
+//获取接口集合
+router.get("/getLink.do", function (req, res) {
+    alimama.getLink({
+        groupId:req.query.groupId||"",
+        auctionid:req.query.auctionid||"",
+        success:function(data){
             if(data){
                 res.send(result.ok(JSON.parse(data).data));
             }else{

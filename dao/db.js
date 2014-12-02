@@ -66,12 +66,13 @@ exports.execQuery = function(options) {
 				if(error) {
 					//log.error('DB-执行查询语句异常！');
 					//throw error;
+                    log.debug(query.sql);
 				}
 				// 处理结果
 				callback&&callback(error,dbResult);
 			});
 
-			log.debug(query.sql);
+			//log.debug(query.sql);
 		}
 
 		// 返回连接池

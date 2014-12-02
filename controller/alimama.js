@@ -69,8 +69,8 @@ alimama.getLink=function(opts){
         _input_charset:opts._input_charset||'utf-8',
         _tb_token_:cache.get("_tb_token_"),
         adzoneid:opts.adzoneid||23818860,           //推广位名称 贴纸
-        auctionid:opts.auctionid||38349612018,      //产品id
-        groupid:opts.groupid||1375950175666,        //群组id
+        auctionid:opts.auctionid,      //产品id
+        groupid:opts.groupid,        //群组id
         siteid:opts.siteid||6112277,                //媒体类型 qq
         t:new Date().getTime()
     };
