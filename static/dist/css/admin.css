@@ -48,10 +48,10 @@
 .admin-alimm-table td{vertical-align: top;border-width: 0;}
 .admin-alimm-table2 td{border: 1px solid #ccc;}
 .admin-alimm-table2 .checkbox-label{margin-top: 4px;}
-.admin-alimm-table-pictd{width: 200px;overflow: hidden;}
+.admin-alimm-table-pictd{width: 198px;overflow: hidden;}
 .admin-alimm-table-pic{width: 100%;display:block;}
 .admin-alimm-table-td{position: relative;padding: 1px 1px 1px 100px !important;}
-.admin-alimm-table-label{position: absolute;left: 0;top: 0;width: 90px;height: 26px;line-height: 26px;padding-left: 10px;}
+.admin-alimm-table-label{position: absolute;left: 0;top: 0; text-align: right; width: 90px;height: 26px;line-height: 26px;padding-left: 10px;}
 .admin-alimm-table-text{border: 1px solid #8daa12;width: 100%;height: 24px;padding: 0 5px;background-color: #fffff2;}
 .admin-alimm-table-select{border: 1px solid #8daa12;height: 24px;}
 .admin-alimm-table-textarea{width: 100%;height: 58px;border: 1px solid #8daa12;resize: none;font-size: 12px;margin: 0;padding: 5px;}

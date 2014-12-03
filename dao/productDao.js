@@ -20,10 +20,10 @@ exports.insert = function(vo, callback) {
 /**
  * DAO: update
  */
-exports.updateById = function(args, callback) {
-    var r=baseDao.convertUpdateFields(args.vo);
+exports.updateById = function(vo, callback) {
+    var r=baseDao.convertUpdateFields(vo);
     db.execQuery({
-        "sql": "UPDATE PRODUCT SET "+r.fields.join(',')+" WHERE id="+args.id,
+        "sql": "UPDATE PRODUCT SET "+r.fields.join(',')+" WHERE id="+vo.id,
         "args": r.values,
         "callback": callback
     });

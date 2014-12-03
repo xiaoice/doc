@@ -29,6 +29,10 @@ cache.init=function(callback){
 cache.get = function(key) {
     return cache[key];
 };
+
+cache.getStr = function(key) {
+    return cache[key]||"";
+};
 cache.set = function(key, obj) {
     cache[key] = obj;
 };

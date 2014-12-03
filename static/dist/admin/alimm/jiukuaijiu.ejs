@@ -35,7 +35,7 @@
     <div id="toolbar" style="padding:2px 5px;">
         <label class="admin-alimm-tool-label">后台分析链接:</label>
         <label class="checkbox-label">
-            <input id="input_linkable" value="true" class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
+            <input id="input_linkable" checked="checked" value="true" class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
         </label>
         <label class="admin-alimm-tool-label">群组:</label>
         <select id="select_groupId" class="easyui-combobox" panelHeight="auto" style="width:100px">
@@ -64,7 +64,7 @@
         <table class="admin-alimm-table admin-alimm-table1">
             <tr>
                 <td class="admin-alimm-table-pictd">
-                    <img class="admin-alimm-table-pic" src="http://img04.taobaocdn.com/bao/uploaded/i4/TB1P4TrGFXXXXbpXFXXXXXXXXXX_!!0-item_pic.jpg"/>
+                    <img class="admin-alimm-table-pic pictUrl" src=""/>
                 </td>
                 <td>
                     <table class="admin-alimm-table admin-alimm-table2">
@@ -79,75 +79,74 @@
                         <tbody>
                         <tr>
                             <td colspan="2" class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">链接：</label>
-                                <input class="admin-alimm-table-text" type="text"/>
+                                <label class="admin-alimm-table-label"><a class="label-clickUrl" target="_blank">直达链接：</a></label>
+                                <input class="admin-alimm-table-text clickUrl" type="text"/>
                             </td>
                             <td colspan="2" class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">链接：</label>
-                                <input class="admin-alimm-table-text" type="text"/>
+                                <label class="admin-alimm-table-label"><a class="label-eliteUrl" target="_blank">爱淘宝链接：</a></label>
+                                <input class="admin-alimm-table-text eliteUrl" type="text"/>
                             </td>
                         </tr>
                         <tr>
                             <td class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">sells：</label>
-                                <input class="admin-alimm-table-text" type="text"/>
+                                <label class="admin-alimm-table-label">已销售数量：</label>
+                                <input class="admin-alimm-table-text sells" type="text" value="<%=alimm_sells%>"/>
                             </td>
                             <td class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">likes：</label>
-                                <input class="admin-alimm-table-text" type="text"/>
+                                <label class="admin-alimm-table-label">已收藏数量：</label>
+                                <input class="admin-alimm-table-text likes" type="text" value="<%=alimm_likes%>"/>
                             </td>
                             <td class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">inventory：</label>
-                                <input class="admin-alimm-table-text" type="text"/>
+                                <label class="admin-alimm-table-label">库存：</label>
+                                <input class="admin-alimm-table-text inventory" type="text" value="<%=alimm_inventory%>"/>
                             </td>
                             <td class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">hits：</label>
-                                <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                                <label class="admin-alimm-table-label">点击数：</label>
+                                <input class="admin-alimm-table-text hits" type="text" readonly="true" value="<%=alimm_hits%>"/>
                             </td>
                         </tr>
                         <tr>
                             <td class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">pass：</label>
+                                <label class="admin-alimm-table-label">审核通过：</label>
                                 <label class="checkbox-label">
-                                    <input class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
+                                    <input <%= alimm_pass=="true"?'checked="checked"':'' %> class="checkbox admin-alimm-table-checkbox pass" type="checkbox"/><span></span>
                                 </label>
                             </td>
                             <td class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">isShow：</label>
+                                <label class="admin-alimm-table-label">是否显示：</label>
                                 <label class="checkbox-label">
-                                    <input class="checkbox admin-alimm-table-checkbox" type="checkbox"/><span></span>
+                                    <input <%= alimm_isShow=="true"?'checked="checked"':'' %> class="checkbox admin-alimm-table-checkbox isShow" type="checkbox"/><span></span>
                                 </label>
                             </td>
                             <td colspan="2" class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">status：</label>
-                                <select id="select_status" class="admin-alimm-table-select">
-                                    <option value="">请选择</option>
-                                    <option value="0">即将开始</option>
-                                    <option value="1">正在热卖</option>
-                                    <option value="2">已经结束</option>
+                                <label class="admin-alimm-table-label">状态：</label>
+                                <select class="admin-alimm-table-select status">
+                                    <option value="0" <%= alimm_status==0?'selected="selected"':'' %>>即将开始</option>
+                                    <option value="1" <%= alimm_status==1?'selected="selected"':'' %>>正在热卖</option>
+                                    <option value="2" <%= alimm_status==2?'selected="selected"':'' %>>已经结束</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">pass：</label>
-                                <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                                <label class="admin-alimm-table-label">SEO标题：</label>
+                                <input class="admin-alimm-table-text seoTitle" type="text" value="<%=alimm_seoTitle%>"/>
                             </td>
                             <td colspan="2" class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">isShow：</label>
-                                <input class="admin-alimm-table-text" type="text" readonly="true"/>
+                                <label class="admin-alimm-table-label">SEO关键字：</label>
+                                <input class="admin-alimm-table-text auctionTag" type="text" value="<%=alimm_auctionTag%>"/>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="4" class="admin-alimm-table-td">
-                                <label class="admin-alimm-table-label">status：</label>
-                                <textarea class="admin-alimm-table-textarea"></textarea>
+                                <label class="admin-alimm-table-label">SEO内容：</label>
+                                <textarea class="admin-alimm-table-textarea seoDesc"><%=alimm_seoDesc%></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="4" class="admin-alimm-table-td">
-                                <button class="button">保存</button>
-                                <button class="button">取消</button>
+                                <button class="button btn-save">保存</button>
+                                <button class="button btn-cancel">取消</button>
                             </td>
                         </tr>
                         </tbody>
@@ -249,11 +248,40 @@
             },
             view: detailview,
             detailFormatter:function(index,row){
-                return $("#datagrid-tpl-insert").html();
+                var $tpl=$("#datagrid-tpl-insert").clone();
+                $tpl.find(".pictUrl").attr("src",row.pictUrl);
+                $tpl.find(".clickUrl").attr('value',row.clickUrl);
+                $tpl.find(".label-clickUrl").attr('href',row.clickUrl);
+                $tpl.find(".eliteUrl").attr('value',row.eliteUrl);
+                $tpl.find(".label-eliteUrl").attr('href',row.eliteUrl);
+                return $tpl.html();
             },
             onExpandRow: function(index,row){
-                console.log(row);
-                var $table = $(this).datagrid('getRowDetail',index).find('.admin-alimm-table1');
+                var $tpl = $(this).datagrid('getRowDetail',index).find('.admin-alimm-table1');
+                $tpl.on("click",".btn-save",function(){
+                    row.sells=$tpl.find(".sells").val();
+                    row.likes=$tpl.find(".likes").val();
+                    row.inventory=$tpl.find(".inventory").val();
+                    row.hits=$tpl.find(".hits").val();
+                    row.pass=$tpl.find(".pass:checked").size()>0;
+                    row.isShow=$tpl.find(".isShow:checked").size()>0;
+                    row.status=$tpl.find(".status").val();
+                    row.seoTitle=$tpl.find(".seoTitle").val();
+                    row.auctionTag=$tpl.find(".auctionTag").val();
+                    row.seoDesc=$tpl.find(".seoDesc").val();
+                    $.post("/admin/product/insert.do",row,function(result){
+                        if(result){
+                            alert(result.msg);
+                            $datagrid.datagrid('collapseRow',index);
+                        }
+                    });
+                });
+
+                $tpl.on("click",".btn-cancel",function(){
+                    $datagrid.datagrid('collapseRow',index);
+                });
+
+                $datagrid.datagrid('selectRow',index);
                 $datagrid.datagrid('fixDetailRowHeight',index);
             },
             onRowContextMenu:function(e,index,row){

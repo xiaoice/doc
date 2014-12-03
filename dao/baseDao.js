@@ -6,10 +6,10 @@ function baseDao (name,primary){
 }
 
 //insert语句-转换vo字段
-function convertInsertFields(vo){
-    var i,fields=[],marks=[],values=[];
+baseDao.prototype.convertInsertFields=function(vo){
+    var i,fields=[],marks=[],values=[],protoVO=this.getVo();
     for(i in vo){
-        if(typeof vo[i] !="undefined"&& i !=="id"){
+        if(typeof vo[i] !="undefined"&&protoVO.hasOwnProperty(i)&& i !=="id"){
             fields.push("`"+i+"`");
             marks.push('?');
             values.push(vo[i]);
@@ -23,7 +23,7 @@ function convertInsertFields(vo){
 };
 
 //update语句-转换vo字段
-function convertUpdateFields(vo){
+baseDao.prototype.convertUpdateFields=function(vo){
     var i,val,fields=[],values=[];
     for(i in vo){
         val=vo[i];
@@ -112,7 +112,7 @@ baseDao.prototype.findListByPage = function(args, callback) {
  * DAO: insert
  */
 baseDao.prototype.insert = function (vo, callback) {
-    var that=this,r=convertInsertFields(vo);
+    var that=this,r=that.convertInsertFields(vo);
     if(!vo.id){
         db.execQuery({
             "sql": "INSERT INTO "+that.name+"("+r.fields.join(',')+") VALUES("+r.marks.join(',')+")",
@@ -130,7 +130,7 @@ baseDao.prototype.insert = function (vo, callback) {
  * DAO: update
  */
 baseDao.prototype.updateById = function(vo,callback) {
-    var that=this,r=convertUpdateFields(vo);
+    var that=this,r=this.convertUpdateFields(vo);
     if(vo.id){
         db.execQuery({
             "sql": "UPDATE "+that.name+" SET "+r.fields.join(',')+" WHERE "+that.primary+"="+vo.id,

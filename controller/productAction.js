@@ -2,7 +2,7 @@ var baseDao = require('../dao/baseDao'),
     productDao = new baseDao("product"),
     alimama = require('../controller/alimama');
 
-var productAction={};
+var productAction=productDao.extend();
 
 //批量添加组数据
 productAction.insertList=function (callback) {
@@ -72,28 +72,5 @@ productAction.findListByPage=function (args,callback) {
         ,pageSize:args.pageSize||10
     }, callback);
 };
-
-
-//保存数据
-productAction.insert=function(args,callback){
-    productDao.insert(args,callback);
-};
-
-//根据id修改数据
-productAction.updateById=function(args,callback){
-    productDao.updateById(args,callback);
-};
-
-//根据id删除数据
-productAction.deleteById=function(args,callback){
-    productDao.deleteById(args,callback);
-};
-
-//根据id获取对象
-productAction.findById=function(args,callback){
-    productDao.findById(args,callback);
-};
-
-
 
 module.exports=productAction;

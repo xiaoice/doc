@@ -1,17 +1,18 @@
 var router = require('express').Router(),
     result=require('../util/util').result,
     configAction = require('../controller/configAction'),
-    alimama = require('../controller/alimama');
+    alimama = require('../controller/alimama'),
+    cache = require('../dao/cache');
 
 //页面路由
 router.get("/login.html", function (req, res) {
     var opts={status:false,cookie:"",token:"",spm:""};
+    opts.cookie=cache.get("Cookie")||"";
+    opts.token=cache.get("_tb_token_")||"";
+    opts.spm=cache.get("spm")||"";
     alimama.loginTest(function(data){
         if(data){
             opts.status=true;
-            opts.cookie=cache.get("Cookie")||"";
-            opts.token=cache.get("_tb_token_")||"";
-            opts.spm=cache.get("spm")||"";
         }
         res.render("admin/alimm/login",opts);
     });
@@ -20,16 +21,29 @@ router.get("/login.html", function (req, res) {
 
 //页面路由
 router.get("/jiukuaijiu.html", function (req, res) {
-    var url="admin/alimm/jiukuaijiu",group=[];
+    var url="admin/alimm/jiukuaijiu",group=[],caches=[];
+    caches.alimm_sells=cache.getStr("alimm_sells");
+    caches.alimm_likes=cache.getStr("alimm_likes");
+    caches.alimm_inventory=cache.getStr("alimm_inventory");
+    caches.alimm_hits=cache.getStr("alimm_hits");
+    caches.alimm_pass=cache.getStr("alimm_pass");
+    caches.alimm_isShow=cache.getStr("alimm_isShow");
+    caches.alimm_status=cache.getStr("alimm_status");
+    caches.alimm_seoTitle=cache.getStr("alimm_seoTitle");
+    caches.alimm_auctionTag=cache.getStr("alimm_auctionTag");
+    caches.alimm_seoDesc=cache.getStr("alimm_seoDesc");
+    caches.group=[];
+
+
     alimama.getGroupList({
         success:function(data){
             if(data&&JSON.parse(data)){
-                group=JSON.parse(data).data.groupInfoList;
+                caches.group=JSON.parse(data).data.groupInfoList;
             }
-            res.render(url,{group:group});
+            res.render(url,caches);
         },
         error:function(err){
-            res.render(url,{group:group});
+            res.render(url,caches);
         }
     });
 });

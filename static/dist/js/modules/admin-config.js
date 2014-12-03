@@ -139,7 +139,7 @@ define('modules/admin-config', ['admin-util'],function(require,exports,module){
             {field:'key',title:'键[key]',width:'20%'},
             {field:'value',title:'值[value]',width:'60%',editor:'textbox'},
             {field:'view',title:'操作',width:'15%',formatter:function(value,row,index){
-                return '<span class="l-btn-left l-btn-icon-left btn-delete" data-id="'+row.id+'" data-key="'+row.key+'" data-index="'+index+'"><span class="l-btn-text">删除</span><span class="l-btn-icon icon-remove"></span></span>';
+                return '<span class="l-btn-left l-btn-icon-left btn-delete" data-id="'+row.id+'" data-key="'+row.key+'"><span class="l-btn-text">删除</span><span class="l-btn-icon icon-remove"></span></span>';
             }}
         ]],
         toolbar: [{
@@ -169,7 +169,7 @@ define('modules/admin-config', ['admin-util'],function(require,exports,module){
 
 
     $document.on("click",".btn-delete",function(){
-       var id=$(this).data("id"),index=$(this).data("index"),key=$(this).data("key");
+       var row,id=$(this).data("id"),key=$(this).data("key");
         $.messager.confirm('删除提示','确定删除？',function(r){
             if (r){
                 $.post("/admin/config/delete.do",{
@@ -177,8 +177,13 @@ define('modules/admin-config', ['admin-util'],function(require,exports,module){
                     key:key
                 },function(result){
                     if(result.status){
-                        $("#datagrid").datagrid("deleteRow",index);
-                        message.ok("删除成功");
+                        var row=$("#datagrid").datagrid("getSelected");
+                        if(row){
+                            $("#datagrid").datagrid("deleteRow",$("#datagrid").datagrid("getRowIndex",row));
+                            message.ok("删除成功");
+                        }else{
+                            message.ok("删除成功,但是显示有错误，请刷新！");
+                        }
                     }else{
                         message.error("删除失败");
                     }

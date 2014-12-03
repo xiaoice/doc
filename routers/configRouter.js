@@ -26,7 +26,7 @@ router.post(/(insert|update).do/, function (req, res) {
             } else {
                 cache.set(vo.key, vo.value);
                 vo.id = vo.id || data.insertId;
-                res.send(result.ok());
+                res.send(result.ok(vo));
             }
         });
     }
