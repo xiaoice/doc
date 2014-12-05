@@ -49,10 +49,10 @@
             <option value="">请选择</option>
             <option value="bid">单价从低到高↑</option>
             <option value="_bid">单价从高到低↓</option>
-            <option value="totalnum">销量从低到高↑</option>
-            <option value="_totalnum">销量从高到低↓</option>
-            <option value="totalfee">佣金从低到高↑</option>
-            <option value="_totalfee">佣金从高到低↓</option>
+            <option value="totalnum">总推广从低到高↑</option>
+            <option value="_totalnum">总推广从高到低↓</option>
+            <option value="totalfee">总佣金从低到高↑</option>
+            <option value="_totalfee">总佣金从高到低↓</option>
         </select>
         <label class="admin-alimm-tool-label">关键字：</label>
         <input id="input_q" class="admin-alimm-tool-text" type="text"/>
@@ -172,18 +172,13 @@
             return val+"%";
         }
 
-        //格式化折扣类型
-        function formatUserType(val){
-            var r={
-                0:"<span class='admin-alimm-type-taobao'>淘宝</span>",
-                1:"<span class='admin-alimm-type-tmall'>天猫</span>"
-            }
-            return r[val];
-        }
-
         //格式化商品链接
-        function formatAuctionUrl(val){
-            return '<a class="admin-alimm-auctionUrl" href="'+val+'" target="_blank">打开</a>';
+        function formatAuctionUrl(val,row){
+            var r={
+                0:"tmall",
+                1:"taobao"
+            };
+            return '<a class="admin-alimm-type-'+r[row.userType]+'" href="'+val+'" target="_blank"><span class="admin-icon-'+r[row.userType]+'"></span>'+'详情</a>';
         }
 
         //格式化图片
@@ -215,8 +210,7 @@
                 {field:'title',title:'标题',width:'32%',formatter:formatTitle},
                 {field:'reservePrice',title:'原始价格',width:'6%',editor:'textbox',formatter:formatUtil},
                 {field:'zkRate',title:'折扣',width:'6%',editor:'textbox',formatter:formatPercent},
-                {field:'zkType',title:'折扣类型',width:'6%',editor:'textbox'},
-                {field:'userType',title:'来源',width:'36px',editor:'textbox',formatter:formatUserType},
+                {field:'zkType',title:'活动主题',width:'6%',editor:'textbox'},
                 {field:'calCommission',title:'佣金',width:'6%',editor:'textbox',formatter:formatUtil},
                 {field:'commissionRatePercent',title:'佣金比例',width:'6%',editor:'textbox',formatter:formatPercent},
                 {field:'groupCommission',title:'群内部佣金',width:'6%',editor:'textbox',formatter:formatUtil},

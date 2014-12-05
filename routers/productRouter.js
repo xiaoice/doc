@@ -46,7 +46,7 @@ router.get('/findListByPage.do', function (req, res) {
             ,pageSize:req.query.rows||10
         }
         ,function(err,data){
-            res.send({total:data.total,rows:data.data});
+            res.send(result.ok({total:data.total,rows:data.data}));
         });
 });
 
@@ -68,6 +68,12 @@ router.get('/deleteById.do', function (req, res) {
 //获取列表页面
 router.get('/index.html', function (req, res) {
     res.render('admin/product');
+});
+
+
+//获取群组列表页面
+router.get('/group.html', function (req, res) {
+    res.render('admin/product/group');
 });
 
 module.exports = router;

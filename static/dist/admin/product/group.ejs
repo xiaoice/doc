@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>后台</title>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <script type="application/javascript" src="/js/jquery.js"></script>
+    <script type="application/javascript" src="/plugin/jquery-easyui/jquery.easyui.min.js"></script>
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/black/easyui.css" />
+    <link charset="utf-8" rel="stylesheet" href="/plugin/jquery-easyui/themes/icon.css" />
+    <link charset="utf-8" rel="stylesheet" href="/css/admin.css" />
+</head>
+<body style="margin: 0;">
+    <table id="datagrid" toolbar="#toolbar" pagination="true" idField="id"
+           rownumbers="true" fitColumns="true" singleSelect="true">
+        <thead>
+        <tr>
+            <th field="title" width="200">标题</th>
+            <th field="reservePrice" width="50">原始价格</th>
+            <th field="zkPrice" width="50">销售价格</th>
+            <th field="zkRate" width="50">折扣</th>
+            <th field="zkType" width="50">折扣类型</th>
+            <th field="userType" width="50">来源</th>
+            <th field="calCommission" width="50">佣金</th>
+            <th field="commissionRatePercent" width="50">佣金比例</th>
+            <th field="groupCommission" width="50">群内部佣金</th>
+            <th field="groupRate" width="50">群内部佣金比例</th>
+            <th field="totalNum" width="50">总推广数</th>
+            <th field="totalFee" width="50">总推广金额</th>
+        </tr>
+        </thead>
+    </table>
+
+    <div id="toolbar" style="padding:2px 5px;">
+        <label class="admin-alimm-tool-label">状态:</label>
+        <select id="select_status" class="easyui-combobox" panelHeight="auto">
+            <option value="">请选择</option>
+            <option value="0">即将开始</option>
+            <option value="1">正在热卖</option>
+            <option value="2">已经结束</option>
+        </select>
+        <label class="admin-alimm-tool-label">审核通过:</label>
+        <select id="select_pass" class="easyui-combobox" panelHeight="auto">
+            <option value="">请选择</option>
+            <option value="0">否</option>
+            <option value="1">是</option>
+        </select>
+        <label class="admin-alimm-tool-label">显示:</label>
+        <select id="select_isShow" class="easyui-combobox" panelHeight="auto">
+            <option value="">请选择</option>
+            <option value="0">否</option>
+            <option value="1">是</option>
+        </select>
+
+        <label class="admin-alimm-tool-label">关键字：</label>
+        <input id="input_q" class="admin-alimm-tool-text" type="text"/>
+        <a id="bt_search" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
+    </div>
+</body>
+</html>
+
+<script>
+    $(function(){
+        var $datagrid=$('#datagrid'),$document=$(document);
+
+        //格式化金额单位
+        function formatUtil(val){
+            return val+"元";
+        }
+
+        //格式化比率
+        function formatPercent(val){
+            return val+"%";
+        }
+
+        //格式化商品链接
+        function formatAuctionUrl(val,row){
+            var r={
+                0:"tmall",
+                1:"taobao"
+            };
+            return '<a class="admin-alimm-type-'+r[row.userType]+'" href="'+val+'" target="_blank"><span class="admin-icon-'+r[row.userType]+'"></span>'+'详情</a>';
+        }
+
+        //格式化淘宝客链接
+        function formatClickUrl(val,row){
+            return '<a class="admin-alimm-type-click" href="'+row.clickUrl+'" target="_blank">'+'直达</a><a class="admin-alimm-type-click" href="'+row.eliteUrl+'" target="_blank">'+'跳转</a>';
+        }
+
+        //格式化时间
+        function formatDatetime(val){
+            return val.replace("T"," ").replace(/[.](.*)/,'');
+        }
+
+        //格式化图片
+        function formatPicUrl(val){
+            return '<img class="admin-alimm-picUrl" src="'+val+'" />';
+        }
+
+        //格式化图片
+        function formatTitle(val){
+            return '<span title="'+val+'" >'+val+'</span>';
+        }
+
+        $datagrid.datagrid({
+            method:"get"
+            ,url: '/admin/product/findListByPage.do'
+            ,loadMsg:"正在加载，请稍后。。。"
+            ,height:$document.height()
+            ,queryParams:{
+                "status":$('#select_status').combobox('getValue'),
+                "isShow":$('#select_isShow').combobox('getValue'),
+                "pass":$('#select_pass').combobox('getValue')
+            }
+            //,pagePosition:"both"
+            ,pageSize:40
+            ,pageList:[20,40,100]
+            ,pagination:true
+            ,columns:[[
+                {field:"auctionId",hidden:true},
+                {field:'title',title:'标题',width:'32%',formatter:formatTitle},
+                {field:'zkType',title:'活动主题',width:'6%',editor:'textbox'},
+                {field:'reservePrice',title:'原始价格',width:'6%',editor:'textbox',formatter:formatUtil},
+                {field:'zkRate',title:'折扣',width:'6%',editor:'textbox',formatter:formatPercent},
+                {field:'groupCommission',title:'佣金',width:'6%',editor:'textbox',formatter:formatUtil},
+                {field:'groupRate',title:'佣金比例',width:'6%',editor:'textbox',formatter:formatPercent},
+                {field:'sells',title:'销售',width:'6%',editor:'textbox'},
+                {field:'likes',title:'收藏',width:'6%',editor:'textbox'},
+                {field:'inventory',title:'库存',width:'6%',editor:'textbox'},
+                {field:'createTime',title:'创建时间',width:'8%',editor:'textbox',formatter:formatDatetime},
+                {field:'click',title:'链接',width:'6%',editor:'textbox',formatter:formatClickUrl},
+                {field:'pictUrl',title:'图',width:'24px',formatter:formatPicUrl},
+                {field:'auctionUrl',title:'商品详情',width:'6%',editor:'textbox',formatter:formatAuctionUrl}
+            ]]
+            ,loadFilter:function(result){
+                var data=[],total=0;
+                if(result&&result.status){
+                    if(result.data){
+                        data=result.data.rows;
+                        total=result.data.total;
+                    }
+                }else{
+                    alert(result.msg);
+                }
+                return {rows:data,total:total};
+            },
+            onLoadSuccess: function(result){
+                var layout=['first','prev','sep',"links",'sep','next','last','sep','refresh','sep','manual'];
+                var displayMsg="当前第[{from}-{to}]条 共[{total}]条";
+                $datagrid.datagrid('getPager').pagination({
+                    layout:layout,
+                    displayMsg:displayMsg
+                });
+            },
+            onRowContextMenu:function(e,index,row){
+                $("#admin-alimm-picBox").remove();
+                $('<div id="admin-alimm-picBox" class="admin-alimm-picBox"><img src="'+row.pictUrl+'"/></div>').appendTo("body");
+                e.preventDefault();
+            }
+        });
+
+        //点击搜索按钮
+        $document.on("click","#bt_search",function(){
+            var groupId=$('#select_groupId').combobox('getValue')
+                ,sort=$('#select_sort').combobox('getValue')
+                ,q=$('#input_q').val()
+                ,linkable=$("#input_linkable:checked").val();
+            if(!groupId){
+                return alert("请选择群组");
+            }
+            $datagrid.datagrid("reload",{
+                groupId:groupId,
+                sort:sort,
+                q:q,
+                linkable:linkable
+            });
+        });
+
+        //鼠标悬浮放大图片
+        $document.on("mouseenter",".admin-alimm-picUrl",function(){
+            var $this=$(this),url=$(this).attr("src"),left=$this.offset().left,top=$this.offset().top;
+            $("#admin-alimm-picBox").remove();
+            $('<div id="admin-alimm-picBox" class="admin-alimm-picBox"><img src="'+url+'"/></div>').appendTo("body");
+        }).on("click",".admin-alimm-picBox",function(){
+            $(this).remove();
+        }).on("mouseleave",".admin-alimm-picUrl",function(){
+            $("#admin-alimm-picBox").remove();
+        });
+
+        //模糊搜索 输入回车直接搜索
+        $document.on("keyup","#input_q",function(e){
+            if(e.keyCode===13){
+                $("#bt_search").trigger("click");
+            }
+        });
+
+
+
+    });
+</script>

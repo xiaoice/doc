@@ -21,7 +21,7 @@ router.get("/login.html", function (req, res) {
 
 //页面路由
 router.get("/jiukuaijiu.html", function (req, res) {
-    var url="admin/alimm/jiukuaijiu",group=[],caches=[];
+    var url="admin/alimm/jiukuaijiu",caches=[];
     caches.alimm_sells=cache.getStr("alimm_sells");
     caches.alimm_likes=cache.getStr("alimm_likes");
     caches.alimm_inventory=cache.getStr("alimm_inventory");
